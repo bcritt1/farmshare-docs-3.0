@@ -5,4 +5,4 @@ title: Conda-Style Environments
 # Conda-Style Environments
 
 !!! note "Planned page"
-    This page hasn't been written yet. Writing tier: 2.
+    This page hasn't been written yet.

@@ -1,6 +1,6 @@
 # Single source for numbers and names used on the site.
 # Use them in pages as {{ facts.home_quota }}, etc.
-# Values marked "unverified" wait on the facts-verification ticket.
+# Values marked "unverified" still need confirming with staff.
 facts:
   support_email: srcc-support@stanford.edu
   login_host: login.farmshare.stanford.edu
@@ -9,7 +9,7 @@ facts:
   announce_channel: "#farmshare-announce"
   home_quota: 50 GB        # verified: staff give 48 GiB (~51 GB) in support replies
   home_quota_du: 48G       # how the limit shows in `du -sh` output (GiB)
-  purge_days: 90           # unverified: from staff draft
+  purge_days: 90           # verified by user
   default_runtime: 2 hours
   max_runtime: 2 days
   long_max_runtime: 7 days

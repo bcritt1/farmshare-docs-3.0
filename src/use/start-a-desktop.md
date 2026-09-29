@@ -5,4 +5,4 @@ title: Start a Desktop
 # Start a Desktop
 
 !!! note "Planned page"
-    This page hasn't been written yet. Writing tier: 1.
+    This page hasn't been written yet.
