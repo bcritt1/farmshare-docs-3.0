@@ -19,12 +19,20 @@ keeps running until you stop it with Ctrl-C.
 
 ## Publish on GitHub Pages
 
-1. Push this repo to GitHub.
-2. In the repo, go to **Settings > Pages** and set **Source** to
-   **GitHub Actions**. This needs admin rights on the repo. If Pages is disabled
-   for the org, an org owner has to allow it.
-3. Every push to `main` then builds and deploys the site through
-   `.github/workflows/deploy.yml`.
+Deployment works the same way as on the Sherlock docs.
+
+1. Push this repo to GitHub. The `deploy` workflow runs `mkdocs gh-deploy`,
+   which builds the site and pushes it to a `gh-pages` branch.
+2. After that first run, go to **Settings > Pages** in the repo, set **Source**
+   to **Deploy from a branch**, and choose `gh-pages`. This needs admin rights
+   on the repo. If Pages is disabled for the org, an org owner has to allow it.
+3. Every push to `main` that changes the site then redeploys it.
+
+## Writing Docs
+
+Read the [style guide](STYLE-GUIDE.md) and the [contributing
+guide](CONTRIBUTING.md). The [writing plan](WRITING-PLAN.md) lists every page
+and the order to write them in.
 
 ## Rename or move the repo
 
