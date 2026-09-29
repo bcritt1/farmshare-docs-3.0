@@ -7,7 +7,7 @@ facts:
   ondemand_url: https://ondemand.farmshare.stanford.edu
   dtn_host: dtn.farmshare.stanford.edu
   announce_channel: "#farmshare-announce"
-  home_quota: 50 GB        # unverified: tickets say 48 GiB
+  home_quota: 50 GB        # verified by user from recent tickets, 2026-09-29
   purge_days: 90           # unverified: from staff draft
   default_runtime: 2 hours
   max_runtime: 2 days
