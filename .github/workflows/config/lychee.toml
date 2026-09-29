@@ -1,7 +1,7 @@
 # lychee link checker configuration
 
 # base URL for resolving protocol-relative (//example.com) and root-relative (/path) URLs
-base_url = "https://stanford-rc.github.io/farmshare-docs-3.0"
+base_url = "https://bcritt1.github.io/farmshare-docs-3.0"
 
 # only check external http/https links
 scheme = ["https", "http"]
@@ -12,7 +12,7 @@ exclude = [
   "mailto:",                   # email links
   "localhost",                 # local URLs
   "127\\.0\\.0\\.1",           # loopback
-  "stanford-rc\\.github\\.io/farmshare-docs-3\\.0", # internal links (checked by mkdocs build --strict)
+  "bcritt1\\.github\\.io/farmshare-docs-3\\.0", # internal links (checked by mkdocs build --strict)
   "srcc\\.slack\\.com",        # login-gated
   "stanford\\.enterprise\\.slack\\.com", # login-gated
   "ondemand\\.farmshare\\.stanford\\.edu", # login-gated

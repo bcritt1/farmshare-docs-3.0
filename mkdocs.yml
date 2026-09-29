@@ -7,10 +7,10 @@
 
 site_name:        FarmShare
 site_description: User documentation for FarmShare, Stanford's cluster for coursework and unsponsored research.
-site_url:         https://stanford-rc.github.io/farmshare-docs-3.0/
+site_url:         https://bcritt1.github.io/farmshare-docs-3.0/
 
-repo_name: stanford-rc/farmshare-docs-3.0
-repo_url:  https://github.com/stanford-rc/farmshare-docs-3.0
+repo_name: bcritt1/farmshare-docs-3.0
+repo_url:  https://github.com/bcritt1/farmshare-docs-3.0
 edit_uri:  edit/main/src/
 
 copyright: >-
