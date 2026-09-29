@@ -5,7 +5,10 @@ tags: [troubleshooting, ondemand]
 
 # OnDemand and desktops
 
-Problems with desktops, JupyterLab, RStudio, MATLAB and VS Code in [OnDemand]({{ facts.ondemand_url }}). If several things stopped working at once, check {{ facts.announce_channel }} on the [SRCC Slack](https://srcc.slack.com/) first. When FarmShare has an outage, sessions fail in all the ways below.
+This page covers common problems with [OnDemand]({{ facts.ondemand_url }}) sessions: desktops, JupyterLab, RStudio, MATLAB and VS Code.
+
+!!! note "Outages"
+    If sessions are failing for everyone, FarmShare may be down. Outages and maintenance are announced in {{ facts.announce_channel }} on the [SRCC Slack](https://srcc.slack.com/).
 
 ## My session says "Completed" right after I launch it
 

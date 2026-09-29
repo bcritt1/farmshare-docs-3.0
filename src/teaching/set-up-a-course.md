@@ -5,9 +5,9 @@ tags: [teaching]
 
 # Set up a course
 
-We can give your course a shared directory on FarmShare, with access groups so your teaching staff can manage files and your students can read them. Students then work in one place with the same files, instead of copying materials around.
+The instructor of a course can ask for a shared course directory on FarmShare. It comes with two workgroups: one for course staff, who can change the files, and one for students.
 
-You don't need us to set anything up for students just to use FarmShare. Anyone with a full-service SUNet ID can log in and use it for coursework. A course setup is for when you want shared files, or class-managed access to them.
+Students don't need a course setup to use FarmShare. Anyone with a full-service SUNet ID can log in and use it for coursework. A course setup is only needed for shared course files.
 
 ## What you get
 
