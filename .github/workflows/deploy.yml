@@ -1,42 +1,31 @@
 name: deploy
-
-# Builds the site and publishes it to GitHub Pages.
-# One-time setup: repo Settings > Pages > Source: GitHub Actions.
+# Same as the Sherlock docs' deploy workflow, without analytics and Slack.
+# One-time setup: repo Settings > Pages > Source: Deploy from a branch, branch gh-pages.
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - 'mkdocs.yml'
+      - 'requirements.txt'
+      - 'includes/**'
+      - 'src/**'
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
+  contents: write
 
 jobs:
-  build:
+
+  deploy:
     runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: 3.x
           cache: pip
-      - run: pip install -r requirements.txt
-      - run: mkdocs build --strict
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - run: |
+          pip install -r requirements.txt
+          mkdocs gh-deploy --force

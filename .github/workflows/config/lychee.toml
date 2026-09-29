@@ -1,13 +1,30 @@
-# Adapted from the Sherlock docs' lychee config.
+# lychee link checker configuration
+
+# base URL for resolving protocol-relative (//example.com) and root-relative (/path) URLs
+base_url = "https://stanford-rc.github.io/farmshare-docs-3.0"
+
+# only check external http/https links
 scheme = ["https", "http"]
+
+# exclude patterns
 exclude = [
-  "\\{\\{",
-  "mailto:",
-  "localhost",
-  "\\.md(#|$)",
-  "srcc\\.slack\\.com",
-  "ondemand\\.farmshare\\.stanford\\.edu",
+  "\\{\\{",                    # template variables ({{ ... }})
+  "mailto:",                   # email links
+  "localhost",                 # local URLs
+  "127\\.0\\.0\\.1",           # loopback
+  "srcc\\.slack\\.com",        # login-gated
+  "ondemand\\.farmshare\\.stanford\\.edu", # login-gated
+  "\\.md(#|$)",                # relative .md links (internal, resolved by mkdocs)
+  "gnu\\.org",                 # times out from CI datacenter IPs (Azure), reachable locally
+  "console\\.mistral\\.ai",    # login-gated console, redirect loop to auth.mistral.ai for non-browser clients
 ]
+
+# accept these status codes as valid
+# 206: partial content, 303: redirect, 403: bot-blocking (mathworks, mysql, openai, etc.), 429: rate limited
 accept = [200, 206, 303, 403, 429]
+
+# timeout in seconds
 timeout = 60
+
+# max number of retries
 max_retries = 3

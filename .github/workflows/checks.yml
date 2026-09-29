@@ -1,49 +1,121 @@
-name: checks
+name: check
 
-# Only a few things block a merge: the build (broken internal links),
-# malformed Markdown, broken external links, and the Vale rules set to
-# "error" (placeholders, chatbot phrases). Other Vale rules only warn.
+# restricting branches prevents jobs from being run twice since
+# a push to a pull request triggers two events.
 on:
   workflow_dispatch:
   pull_request:
+    branches:
+      - "*"
   push:
-    branches: [main]
+    branches:
+      - main
+
 
 jobs:
-  build:
+
+  build_check:  # ------------------------------------------------------------
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: setup python
+        uses: actions/setup-python@v7
         with:
           python-version: 3.x
           cache: pip
-      - run: pip install -r requirements.txt
-      - run: mkdocs build --strict
+      - name: install Material for MkDocs and dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: build site
+        run: mkdocs build --strict
 
-  markdown:
+
+  yaml_lint: # ----------------------------------------------------------------
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v20
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: list changed yaml files
+        id: changedfiles
+        uses: tj-actions/changed-files@v47
         with:
-          config: .github/workflows/config/.markdownlint.yml
-          globs: src/**/*.md
+          files: |
+            **.yml
+            **.yaml
+      - name: lint yaml files
+        uses: ibiqlik/action-yamllint@v3
+        if: steps.changedfiles.outputs.any_changed == 'true'
+        with:
+          file_or_dir: ${{ steps.changedfiles.outputs.all_changed_files }}
+          config_file: .github/workflows/config/yamllint.yml
 
-  links:
+
+  md_lint: # ----------------------------------------------------------------
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v2
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: list changed markdown files
+        id: changedfiles
+        uses: tj-actions/changed-files@v47
         with:
-          args: --config .github/workflows/config/lychee.toml 'src/**/*.md'
+          files: '**.md'
+      - name: lint markdown files
+        uses: nosborn/github-action-markdown-cli@v3.5.0
+        if: steps.changedfiles.outputs.any_changed == 'true'
+        with:
+          files: ${{ steps.changedfiles.outputs.all_changed_files }}
+          config_file: .github/workflows/config/markdownlint.yml
+
+
+  spell_check: # ----------------------------------------------------------------
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: list changed markdown files
+        id: changedfiles
+        uses: tj-actions/changed-files@v47
+        with:
+          files: '**.md'
+      - uses: rojopolis/spellcheck-github-actions@0.66.0
+        if: steps.changedfiles.outputs.any_changed == 'true'
+        with:
+          source_files: ${{ steps.changedfiles.outputs.all_changed_files }}
+          config_path: .github/workflows/config/spellcheck.yml
+          task_name: markdown
+
+
+  link_check: # ----------------------------------------------------------------
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: list changed markdown files
+        id: changedfiles
+        uses: tj-actions/changed-files@v47
+        with:
+          files: '**.md'
+      - name: check links in changed files
+        uses: lycheeverse/lychee-action@v2
+        if: steps.changedfiles.outputs.any_changed == 'true'
+        with:
+          args: >-
+            --config .github/workflows/config/lychee.toml
+            ${{ steps.changedfiles.outputs.all_changed_files }}
           fail: true
 
-  prose:
+
+  prose_lint: # ----------------------------------------------------------------
+    # FarmShare addition: Vale prose rules in styles/FarmShare.
+    # Only error-level rules (placeholders, chatbot phrasing) fail the check.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: errata-ai/vale-action@v2
+      - name: checkout repo
+        uses: actions/checkout@v7
+      - name: lint prose
+        uses: errata-ai/vale-action@v2
         with:
           files: src
           fail_on_error: true
