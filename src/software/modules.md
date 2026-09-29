@@ -1,8 +1,8 @@
 ---
-title: Find installed software
+title: Find Installed Software
 ---
 
-# Find installed software
+# Find Installed Software
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

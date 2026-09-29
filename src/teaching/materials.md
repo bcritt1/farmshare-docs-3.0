@@ -1,8 +1,8 @@
 ---
-title: Teaching materials
+title: Teaching Materials
 ---
 
-# Teaching materials
+# Teaching Materials
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

@@ -1,8 +1,8 @@
 ---
-title: How jobs get scheduled
+title: How Jobs Get Scheduled
 ---
 
-# How jobs get scheduled
+# How Jobs Get Scheduled
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

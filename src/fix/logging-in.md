@@ -1,8 +1,8 @@
 ---
-title: Logging in
+title: Logging In
 ---
 
-# Logging in
+# Logging In
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

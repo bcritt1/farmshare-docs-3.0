@@ -121,48 +121,48 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Get started:
-      - "Is FarmShare right for me?": get-started/is-farmshare-right.md
-      - Log in for the first time: get-started/first-login.md
-      - Run your first job: get-started/first-job.md
-      - Where to put your files: get-started/where-to-put-files.md
+  - Get Started:
+      - "Is FarmShare Right for Me?": get-started/is-farmshare-right.md
+      - Log In for the First Time: get-started/first-login.md
+      - Run Your First Job: get-started/first-job.md
+      - Where to Put Your Files: get-started/where-to-put-files.md
       - Coming from Sherlock: get-started/coming-from-sherlock.md
   - Use FarmShare:
-      - Work in your browser:
-          - Start a desktop: use/start-a-desktop.md
+      - Work in Your Browser:
+          - Start a Desktop: use/start-a-desktop.md
           - Use JupyterLab: use/jupyterlab.md
           - Use RStudio: use/rstudio.md
           - Use VS Code: use/vs-code.md
-          - Run GUI programs: use/gui-programs.md
-          - Use Caddyshack for EE courses: use/caddyshack.md
-      - Run jobs:
-          - Submit a batch job: use/batch-jobs.md
-          - Get an interactive session: use/interactive-sessions.md
+          - Run GUI Programs: use/gui-programs.md
+          - Use Caddyshack for EE Courses: use/caddyshack.md
+      - Run Jobs:
+          - Submit a Batch Job: use/batch-jobs.md
+          - Get an Interactive Session: use/interactive-sessions.md
           - Use GPUs: use/gpus.md
-          - Run long or big-memory jobs: use/long-and-bigmem-jobs.md
-          - Run many jobs at once: use/job-arrays.md
-          - Run parallel and MPI jobs: use/mpi.md
-          - Job options reference: use/job-options.md
-          - How jobs get scheduled: use/scheduling.md
-      - Manage your files:
-          - Check and free up space: use/free-up-space.md
-          - Move files to and from FarmShare: use/transfer.md
-          - Share files with a group: use/sharing.md
+          - Run Long or Big-Memory Jobs: use/long-and-bigmem-jobs.md
+          - Run Many Jobs at Once: use/job-arrays.md
+          - Run Parallel and MPI Jobs: use/mpi.md
+          - Job Options Reference: use/job-options.md
+          - How Jobs Get Scheduled: use/scheduling.md
+      - Manage Your Files:
+          - Check and Free Up Space: use/free-up-space.md
+          - Move Files to and from FarmShare: use/transfer.md
+          - Share Files with a Group: use/sharing.md
           - Use AFS: use/afs.md
-      - Connect in other ways:
-          - Set up SSH: use/ssh-setup.md
-          - SSH to a compute node: use/ssh-compute-node.md
-          - Use the login nodes: use/login-nodes.md
+      - Connect in Other Ways:
+          - Set Up SSH: use/ssh-setup.md
+          - SSH to a Compute Node: use/ssh-compute-node.md
+          - Use the Login Nodes: use/login-nodes.md
   - Software:
-      - Find installed software: software/modules.md
-      - Request software: software/request.md
+      - Find Installed Software: software/modules.md
+      - Request Software: software/request.md
       - Python: software/python.md
       - R: software/r.md
-      - Conda-style environments: software/conda-style-environments.md
-      - Install software yourself: software/install-yourself.md
+      - Conda-Style Environments: software/conda-style-environments.md
+      - Install Software Yourself: software/install-yourself.md
       - Containers: software/containers.md
-      - AI coding agents: software/ai-coding-agents.md
-      - Licensed software:
+      - AI Coding Agents: software/ai-coding-agents.md
+      - Licensed Software:
           - Overview: software/licensed/index.md
           - MATLAB: software/licensed/matlab.md
           - Gaussian and GaussView: software/licensed/gaussian.md
@@ -174,31 +174,31 @@ nav:
           - Schrödinger: software/licensed/schrodinger.md
           - Sentaurus: software/licensed/sentaurus.md
   - Teaching:
-      - Overview and timeline: teaching/index.md
-      - Set up a course: teaching/set-up-a-course.md
-      - Add students and TAs: teaching/add-students-and-tas.md
-      - Request course software or reserved nodes: teaching/course-software-and-reservations.md
-      - Get ready for class day: teaching/class-day.md
-      - Teaching materials: teaching/materials.md
-  - Fix a problem:
-      - OnDemand and desktops: fix/ondemand.md
-      - Storage and files: fix/storage.md
-      - Logging in: fix/logging-in.md
+      - Overview and Timeline: teaching/index.md
+      - Set Up a Course: teaching/set-up-a-course.md
+      - Add Students and TAs: teaching/add-students-and-tas.md
+      - Request Course Software or Reserved Nodes: teaching/course-software-and-reservations.md
+      - Get Ready for Class Day: teaching/class-day.md
+      - Teaching Materials: teaching/materials.md
+  - Fix a Problem:
+      - OnDemand and Desktops: fix/ondemand.md
+      - Storage and Files: fix/storage.md
+      - Logging In: fix/logging-in.md
       - Jobs: fix/jobs.md
       - GPUs: fix/gpus.md
-      - Software and modules: fix/software.md
+      - Software and Modules: fix/software.md
       - AFS: fix/afs.md
-      - Common questions: fix/common-questions.md
-      - Get help: fix/get-help.md
+      - Common Questions: fix/common-questions.md
+      - Get Help: fix/get-help.md
   - Reference:
       - Limits: reference/limits.md
-      - Storage locations and quotas: reference/storage.md
+      - Storage Locations and Quotas: reference/storage.md
       - Hardware: reference/hardware.md
-      - Software list: reference/software-list.md
+      - Software List: reference/software-list.md
       - Policies: reference/policies.md
       - Glossary: reference/glossary.md
-  - Additional resources:
-      - Other Stanford Research Computing services:
+  - Additional Resources:
+      - Other Stanford Research Computing Services:
           - Sherlock: resources/sherlock.md
           - Oak: resources/oak.md
           - Nero: resources/nero.md
@@ -208,5 +208,5 @@ nav:
           - NSF ACCESS: resources/nsf-access.md
           - Google Cloud: resources/google-cloud.md
   - About:
-      - "What's changed": about/whats-changed.md
+      - "What's Changed": about/whats-changed.md
       - Supporting FarmShare: about/supporting-farmshare.md

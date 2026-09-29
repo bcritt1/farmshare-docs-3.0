@@ -1,8 +1,8 @@
 ---
-title: Storage locations and quotas
+title: Storage Locations and Quotas
 ---
 
-# Storage locations and quotas
+# Storage Locations and Quotas
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

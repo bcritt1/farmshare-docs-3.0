@@ -1,8 +1,8 @@
 ---
-title: Run long or big-memory jobs
+title: Run Long or Big-Memory Jobs
 ---
 
-# Run long or big-memory jobs
+# Run Long or Big-Memory Jobs
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

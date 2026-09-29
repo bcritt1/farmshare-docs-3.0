@@ -1,8 +1,8 @@
 ---
-title: Where to put your files
+title: Where to Put Your Files
 ---
 
-# Where to put your files
+# Where to Put Your Files
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

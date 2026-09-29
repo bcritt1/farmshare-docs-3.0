@@ -1,8 +1,8 @@
 ---
-title: Start a desktop
+title: Start a Desktop
 ---
 
-# Start a desktop
+# Start a Desktop
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

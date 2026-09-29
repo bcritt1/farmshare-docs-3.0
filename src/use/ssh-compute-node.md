@@ -1,8 +1,8 @@
 ---
-title: SSH to a compute node
+title: SSH to a Compute Node
 ---
 
-# SSH to a compute node
+# SSH to a Compute Node
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

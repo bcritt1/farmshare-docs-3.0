@@ -1,8 +1,8 @@
 ---
-title: Run many jobs at once
+title: Run Many Jobs at Once
 ---
 
-# Run many jobs at once
+# Run Many Jobs at Once
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

@@ -1,8 +1,8 @@
 ---
-title: Job options reference
+title: Job Options Reference
 ---
 
-# Job options reference
+# Job Options Reference
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

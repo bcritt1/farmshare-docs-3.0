@@ -1,8 +1,8 @@
 ---
-title: Common questions
+title: Common Questions
 ---
 
-# Common questions
+# Common Questions
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

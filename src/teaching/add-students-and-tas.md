@@ -1,8 +1,8 @@
 ---
-title: Add students and TAs
+title: Add Students and TAs
 ---
 
-# Add students and TAs
+# Add Students and TAs
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

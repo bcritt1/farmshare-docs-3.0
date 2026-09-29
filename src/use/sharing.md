@@ -1,8 +1,8 @@
 ---
-title: Share files with a group
+title: Share Files with a Group
 ---
 
-# Share files with a group
+# Share Files with a Group
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

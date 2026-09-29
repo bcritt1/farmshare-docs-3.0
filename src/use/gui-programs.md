@@ -1,8 +1,8 @@
 ---
-title: Run GUI programs
+title: Run GUI Programs
 ---
 
-# Run GUI programs
+# Run GUI Programs
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

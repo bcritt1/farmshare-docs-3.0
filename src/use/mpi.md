@@ -1,8 +1,8 @@
 ---
-title: Run parallel and MPI jobs
+title: Run Parallel and MPI Jobs
 ---
 
-# Run parallel and MPI jobs
+# Run Parallel and MPI Jobs
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

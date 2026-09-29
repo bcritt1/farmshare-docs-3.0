@@ -1,8 +1,8 @@
 ---
-title: Get an interactive session
+title: Get an Interactive Session
 ---
 
-# Get an interactive session
+# Get an Interactive Session
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

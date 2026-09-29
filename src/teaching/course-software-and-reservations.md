@@ -1,8 +1,8 @@
 ---
-title: Request course software or reserved nodes
+title: Request Course Software or Reserved Nodes
 ---
 
-# Request course software or reserved nodes
+# Request Course Software or Reserved Nodes
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

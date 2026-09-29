@@ -1,8 +1,8 @@
 ---
-title: Conda-style environments
+title: Conda-Style Environments
 ---
 
-# Conda-style environments
+# Conda-Style Environments
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

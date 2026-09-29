@@ -1,8 +1,8 @@
 ---
-title: Software list
+title: Software List
 ---
 
-# Software list
+# Software List
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

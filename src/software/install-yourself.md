@@ -1,8 +1,8 @@
 ---
-title: Install software yourself
+title: Install Software Yourself
 ---
 
-# Install software yourself
+# Install Software Yourself
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

@@ -1,8 +1,8 @@
 ---
-title: Get ready for class day
+title: Get Ready for Class Day
 ---
 
-# Get ready for class day
+# Get Ready for Class Day
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

@@ -1,8 +1,8 @@
 ---
-title: Log in for the first time
+title: Log In for the First Time
 ---
 
-# Log in for the first time
+# Log In for the First Time
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

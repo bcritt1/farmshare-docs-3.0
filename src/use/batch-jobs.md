@@ -1,8 +1,8 @@
 ---
-title: Submit a batch job
+title: Submit a Batch Job
 ---
 
-# Submit a batch job
+# Submit a Batch Job
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

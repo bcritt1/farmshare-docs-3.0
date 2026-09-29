@@ -1,8 +1,8 @@
 ---
-title: AI coding agents
+title: AI Coding Agents
 ---
 
-# AI coding agents
+# AI Coding Agents
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

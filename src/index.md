@@ -15,15 +15,15 @@ If FarmShare seems to be down, check {{ facts.announce_channel }} on the [SRCC S
 
 <div class="grid cards" markdown>
 
--   **Taking a class**
+-   **Taking a Class**
 
     [Log in for the first time](get-started/first-login.md), then [start a desktop](use/start-a-desktop.md) or [run your first job](get-started/first-job.md).
 
--   **Doing your own research**
+-   **Doing Your Own Research**
 
     See whether [FarmShare is right for your work](get-started/is-farmshare-right.md), then [where to put your files](get-started/where-to-put-files.md).
 
--   **Teaching a class**
+-   **Teaching a Class**
 
     [Teaching with FarmShare](teaching/index.md) covers course setup and how far ahead to ask.
 

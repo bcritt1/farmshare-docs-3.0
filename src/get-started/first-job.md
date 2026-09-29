@@ -1,8 +1,8 @@
 ---
-title: Run your first job
+title: Run Your First Job
 ---
 
-# Run your first job
+# Run Your First Job
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

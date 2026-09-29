@@ -1,8 +1,8 @@
 ---
-title: Check and free up space
+title: Check and Free Up Space
 ---
 
-# Check and free up space
+# Check and Free Up Space
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.

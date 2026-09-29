@@ -1,8 +1,8 @@
 ---
-title: Is FarmShare right for me?
+title: Is FarmShare Right for Me?
 ---
 
-# Is FarmShare right for me?
+# Is FarmShare Right for Me?
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 2.

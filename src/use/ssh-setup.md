@@ -1,8 +1,8 @@
 ---
-title: Set up SSH
+title: Set Up SSH
 ---
 
-# Set up SSH
+# Set Up SSH
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 3.

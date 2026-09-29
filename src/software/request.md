@@ -1,8 +1,8 @@
 ---
-title: Request software
+title: Request Software
 ---
 
-# Request software
+# Request Software
 
 !!! note "Planned page"
     This page hasn't been written yet. Writing tier: 1.
