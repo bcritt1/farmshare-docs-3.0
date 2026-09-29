@@ -3,6 +3,6 @@ message: "Generic opener: '%s'. Start with what the reader gets or does."
 level: warning
 ignorecase: true
 tokens:
-  - This page (explains|describes|covers|will)
+  - This page (explains|describes|will)
   - In this (section|page|guide), (we|you) will
   - Welcome to

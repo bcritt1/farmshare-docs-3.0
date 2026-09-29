@@ -12,6 +12,7 @@ exclude = [
   "mailto:",                   # email links
   "localhost",                 # local URLs
   "127\\.0\\.0\\.1",           # loopback
+  "stanford-rc\\.github\\.io/farmshare-docs-3\\.0", # internal links (checked by mkdocs build --strict)
   "srcc\\.slack\\.com",        # login-gated
   "ondemand\\.farmshare\\.stanford\\.edu", # login-gated
   "\\.md(#|$)",                # relative .md links (internal, resolved by mkdocs)

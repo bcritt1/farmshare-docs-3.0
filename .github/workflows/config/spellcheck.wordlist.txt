@@ -232,3 +232,16 @@ Pixi
 Micromamba
 Podman
 Apptainer
+nav
+sudo
+linter
+GCP
+WinSCP
+SAS
+repo
+hostnames
+FarmShare's
+else's
+EE
+config
+chatbot

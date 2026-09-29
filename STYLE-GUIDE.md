@@ -44,29 +44,32 @@ alternative. A bare rule reads as cold and dictatorial:
 
 Say it the way a person would explain it:
 
-> We give everyone 50 GB of home space. We'd like to offer more, but FarmShare's
-storage is shared and free, and keeping home the same size for everyone is how
-we keep it fair. So we can't raise it for individual people. > > For bigger
-data, use your scratch directory. It has no size limit. We clear out files there
-that haven't changed in 90 days, so keep copies of anything important somewhere
-else.
+> We give everyone 50 GB of home space. We'd like to offer more, but
+> FarmShare's storage is shared and free, and keeping home the same size for
+> everyone is how we keep it fair. So we can't raise it for individual people.
+>
+> For bigger data, use your scratch directory. It has no size limit. We clear
+> out files there that haven't changed in 90 days, so keep copies of anything
+> important somewhere else.
 
 ## How Pages Start
 
-Open with one plain sentence saying what the page covers. Don't open with a
-sentence fragment, a dramatic line, or a pitch for the feature. Put side
-information, such as where outages are announced, in a note admonition under
-that sentence.
+Start with a sentence or two that tells the reader what's on the page, in the
+same plain register as the rest of it. There's no set formula, and pages
+shouldn't all open the same way. Don't open with a sentence fragment, a
+dramatic line, or a pitch for the feature, and don't just repeat the title.
+Put side information, such as where outages are announced, in a note
+admonition below the opening.
 
-Avoid:
+This opening from a first draft read as too friendly and conversational:
 
 > Problems with desktops, JupyterLab, RStudio, MATLAB and VS Code in OnDemand.
-When FarmShare has an outage, sessions fail in all the ways below.
+> When FarmShare has an outage, sessions fail in all the ways below.
 
-Write:
+It was replaced with a plain statement of what the page covers:
 
-> This page covers common problems with OnDemand sessions: desktops, JupyterLab,
-RStudio, MATLAB and VS Code.
+> This page covers common problems with OnDemand sessions: desktops,
+> JupyterLab, RStudio, MATLAB and VS Code.
 
 ## Internals and "Why"
 
@@ -120,8 +123,8 @@ documentation written by someone who knows FarmShare. AI-written docs are
 recognizable less by particular words than by habits of framing. Watch for these
 in any draft:
 
-1. An opening that restates the title or announces the page ("This page explains
-   how to…", "In this section, we will…").
+1. An opening that announces the page without adding anything ("This page
+   explains how to…", "In this section, we will…").
 2. A first line under a heading that restates the heading.
 3. Sections that all have the same shape: intro, list of three, summary.
 4. A closing paragraph that sums up what was just said.
@@ -165,7 +168,8 @@ tags:
     - desktop
 ---
 
-This page covers starting a FarmShare Desktop in OnDemand.
+A FarmShare Desktop is a Linux desktop that runs on FarmShare and opens in
+your browser, for programs that need a graphical interface.
 
 **Before you start:** log in to FarmShare once. See [Log In for the First Time](../get-started/first-login.md).
 
@@ -194,7 +198,8 @@ tags:
     - ondemand
 ---
 
-This page covers common problems with OnDemand sessions.
+This page covers common problems with OnDemand sessions: desktops, JupyterLab,
+RStudio, MATLAB and VS Code.
 
 !!! note "Outages"
     If sessions are failing for everyone, FarmShare may be down. Outages and maintenance are announced in `{{ facts.announce_channel }}`.

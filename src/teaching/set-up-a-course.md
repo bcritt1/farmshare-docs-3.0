@@ -50,10 +50,10 @@ and include:
 3. Whether you'll need class scratch space, course software, or reserved nodes
    for an assignment.
 
-Ask as early as you can, ideally a few weeks before the quarter starts. The
-first weeks of each quarter are our busiest time, and course software and
-reserved nodes take longer to arrange than a directory does. See [Request course
-software or reserved nodes](course-software-and-reservations.md).
+Ask as early as you can, before the quarter starts. The first weeks of each
+quarter are our busiest time, and course software and reserved nodes take longer
+to arrange than a directory does. See [Request course software or reserved
+nodes](course-software-and-reservations.md).
 
 ## After We Set It Up
 
