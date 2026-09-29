@@ -10,3 +10,16 @@ facts:
   home_quota: 50 GB        # unverified: tickets say 48 GiB
   purge_days: 90           # unverified: from staff draft
   default_runtime: 2 hours # unverified: from staff draft
+  scratch_path: /scratch/users/$USER   # verified: $SCRATCH is not set
+  cuda_module: cuda/12.9.0
+  qos:
+    interactive: {cpus: 16, mem: 64G, jobs: 4}
+    dev: {max_time: 8 hours, cpus: 8, mem: 32G, jobs: 1}
+    long: {max_time: 7 days, cpus: 128, running_jobs: 4, submitted_jobs: 32}
+    bigmem: {mem: 1.5 TB, running_jobs: 4}
+    gpu: {gpus: 4, running_jobs: 4, submitted_jobs: 32}
+    normal: {cpus: 512, gpus: 1, running_jobs: 128, submitted_jobs: 1024}
+  gpu_nodes: 6
+  gpus_per_node: 4
+  gpu_model: NVIDIA L40S
+  ondemand_apps: [FarmShare Desktop, Caddyshack Desktop, JupyterLab, MATLAB, RStudio, VS Code]
