@@ -7,13 +7,16 @@ facts:
   ondemand_url: https://ondemand.farmshare.stanford.edu
   dtn_host: dtn.farmshare.stanford.edu
   announce_channel: "#farmshare-announce"
+  announce_url: https://stanford.enterprise.slack.com/archives/C018K0RR3GU
+  users_channel: "#farmshare-users"
+  users_url: https://stanford.enterprise.slack.com/archives/C018638T170
   home_quota: 50 GB        # verified: staff give 48 GiB (~51 GB) in support replies
   home_quota_du: 48G       # how the limit shows in `du -sh` output (GiB)
   purge_days: 90           # verified by user
   default_runtime: 2 hours
   max_runtime: 2 days
   long_max_runtime: 7 days
-  interactive_max_runtime: 1 day  # unverified: from staff draft
+  interactive_max_runtime: 1 day  # per the FarmShare admin's draft docs
   scratch_path: /scratch/users/$USER   # verified: $SCRATCH is not set
   cuda_module: cuda/12.9.0
   qos:

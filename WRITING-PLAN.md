@@ -16,16 +16,16 @@ there's no Sherlock equivalent.
 
 | Page | Purpose | Source | Tier |
 |---|---|---|---|
-| Home | What FarmShare is and who it's for. A pointer to `#farmshare-announce` for outages. Entry points for class, research, teaching, and coming from Sherlock. | rewrite | 1 |
+| Home | What FarmShare is and who it's for. A pointer to `#farmshare-announce` for outages. Entry points for class, research, teaching, and coming from Sherlock. | admin draft | 1 |
 
 ## Get Started
 
 | Page | Purpose | Source | Tier |
 |---|---|---|---|
-| Is FarmShare Right for Me? | Eligibility, cost, data risk, what it's not for | new | 2 |
-| Log In for the First Time | SSH and OnDemand, Duo, the first login creating your account | rewrite | 1 |
+| Is FarmShare Right for Me? | Eligibility, cost, data risk, what it's not for | admin draft | 2 |
+| Log In for the First Time | SSH and OnDemand, Duo, the first login creating your account | admin draft | 1 |
 | Run Your First Job | Script, submit, check, find output | rewrite | 2 |
-| Where to Put Your Files | Home vs scratch vs `/tmp`, purge, no long-term storage | new | 1 |
+| Where to Put Your Files | Home vs scratch vs `/tmp`, purge, no long-term storage | admin draft | 1 |
 | Coming from Sherlock | What's different if you know Sherlock | new | 3 |
 
 ## Use FarmShare
@@ -38,19 +38,19 @@ there's no Sherlock equivalent.
 | Use VS Code | The OnDemand app; Remote-SSH is unsupported | rewrite | 2 |
 | Run GUI Programs | MATLAB, GaussView, Ansys and others in a desktop | new | 2 |
 | Use Caddyshack for EE Courses | Includes who supports what | new | 2 |
-| Submit a Batch Job | | rewrite | 2 |
-| Get an Interactive Session | | rewrite | 2 |
+| Submit a Batch Job | | admin draft | 2 |
+| Get an Interactive Session | | admin draft | 2 |
 | Use GPUs | | rewrite | 2 |
 | Run Long or Big-Memory Jobs | | rewrite | 3 |
 | Run Many Jobs at Once | Job arrays | adapt | 3 |
 | Run Parallel and MPI Jobs | | new | 3 |
-| Job Options Reference | | adapt | 3 |
-| How Jobs Get Scheduled | | adapt | 3 |
+| Job Options Reference | | admin draft | 3 |
+| How Jobs Get Scheduled | | admin draft | 3 |
 | Check and Free Up Space | | rewrite | 1 |
-| Move Files to and from FarmShare | | rewrite | 2 |
+| Move Files to and from FarmShare | | admin draft | 2 |
 | Share Files with a Group | | rewrite | 3 |
-| Use AFS | | new | 3 |
-| Set Up SSH | Config, Kerberos, fewer Duo prompts | rewrite | 3 |
+| Use AFS | | admin draft | 3 |
+| Set Up SSH | Config, Kerberos, fewer Duo prompts | admin draft | 3 |
 | SSH to a Compute Node | | new | 3 |
 | Use the Login Nodes | | new | 3 |
 
@@ -58,13 +58,13 @@ there's no Sherlock equivalent.
 
 | Page | Purpose | Source | Tier |
 |---|---|---|---|
-| Find Installed Software | Modules | adapt | 2 |
+| Find Installed Software | Modules | admin draft | 2 |
 | Request Software | | new | 1 |
-| Python | | adapt | 2 |
-| R | | adapt | 2 |
-| Conda-Style Environments | Micromamba, Pixi | rewrite | 2 |
-| Install Software Yourself | No sudo | rewrite | 3 |
-| Containers | Apptainer, Podman | rewrite | 3 |
+| Python | | admin draft | 2 |
+| R | | admin draft | 2 |
+| Conda-Style Environments | Micromamba, Pixi | admin draft | 2 |
+| Install Software Yourself | No sudo | admin draft | 3 |
+| Containers | Apptainer, Podman | admin draft | 3 |
 | AI Coding Agents | | rewrite | 3 |
 | Licensed Software: Overview | What's licensed, who can use it, requesting for a course | new | 1 |
 | MATLAB | | rewrite | 2 |
@@ -100,17 +100,17 @@ One page per area. Each page lists its problems and gives the solutions.
 | Software and Modules | Missing modules, pip/python mismatch, Apptainer errors | 2 |
 | AFS | Not visible from jobs or OnDemand, timeouts, re-authenticating | 3 |
 | Common Questions | The "why" questions: unlimited storage, no sudo, no extensions, no SSH keys | 2 |
-| Get Help | What to send, hours, office hours, Slack (including `#farmshare-announce` for outages) | 1 |
+| Get Help | What to send, hours, office hours, Slack (including `#farmshare-announce` for outages). Start from the admin draft. | 1 |
 
 ## Reference
 
 | Page | Source | Tier |
 |---|---|---|
-| Limits: Partitions, QoS, Time and Memory | rewrite. A simplified summary table in the spirit of Sherlock's `sh_part` output (partition, time default and maximum, per-user CPU, memory and GPU limits), without node lists or system detail. | 2 |
-| Storage Locations and Quotas | rewrite | 1 |
-| Hardware | rewrite | 3 |
+| Limits: Partitions, QoS, Time and Memory | admin draft. A simplified summary table in the spirit of Sherlock's `sh_part` output (partition, time default and maximum, per-user CPU, memory and GPU limits), without node lists or system detail. | 2 |
+| Storage Locations and Quotas | admin draft | 1 |
+| Hardware | admin draft | 3 |
 | Software List | rewrite | 2 |
-| Policies | rewrite | 3 |
+| Policies | admin draft | 3 |
 | Glossary | adapt | 3 |
 
 ## Additional Resources
@@ -143,4 +143,4 @@ Each of these pages makes clear the service isn't ours.
 | Page | Source | Tier |
 |---|---|---|
 | What's Changed | new | 3 |
-| Supporting FarmShare | rewrite | 3 |
+| Supporting FarmShare | admin draft | 3 |

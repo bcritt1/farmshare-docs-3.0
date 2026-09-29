@@ -13,8 +13,9 @@ hide:
 FarmShare is Stanford's computing cluster for coursework and unsponsored
 research. Anyone with a full-service SUNet ID can use it, and it's free.
 
-If FarmShare seems to be down, check `{{ facts.announce_channel }}` on the [SRCC
-Slack](https://srcc.slack.com/) for outages and maintenance.
+If FarmShare seems to be down, check
+[`{{ facts.announce_channel }}`]({{ facts.announce_url }}) on Slack for outages
+and maintenance.
 
 <div class="grid cards" markdown>
 

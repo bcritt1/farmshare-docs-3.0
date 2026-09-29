@@ -9,8 +9,8 @@ sessions: desktops, JupyterLab, RStudio, MATLAB and VS Code.
 
 !!! note "Outages"
     If sessions are failing for everyone, FarmShare may be down. Outages and
-    maintenance are announced in `{{ facts.announce_channel }}` on the [SRCC
-    Slack](https://srcc.slack.com/).
+    maintenance are announced in
+    [`{{ facts.announce_channel }}`]({{ facts.announce_url }}) on Slack.
 
 ## My Session Says "Completed" Right After I Launch It
 

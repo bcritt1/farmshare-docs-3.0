@@ -56,10 +56,10 @@ Say it the way a person would explain it:
 
 Start with a sentence or two that tells the reader what's on the page, in the
 same plain register as the rest of it. There's no set formula, and pages
-shouldn't all open the same way. Don't open with a sentence fragment, a
-dramatic line, or a pitch for the feature, and don't just repeat the title.
-Put side information, such as where outages are announced, in a note
-admonition below the opening.
+shouldn't all open the same way. Don't open with a sentence fragment, a dramatic
+line, or a pitch for the feature, and don't just repeat the title. Put side
+information, such as where outages are announced, in a note admonition below the
+opening.
 
 This opening from a first draft read as too friendly and conversational:
 
