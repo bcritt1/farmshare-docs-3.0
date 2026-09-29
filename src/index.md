@@ -15,19 +15,19 @@ If FarmShare seems to be down, check {{ facts.announce_channel }} on the [SRCC S
 
 <div class="grid cards" markdown>
 
--   **I'm taking a class**
+-   **Taking a class**
 
     [Log in for the first time](get-started/first-login.md), then [start a desktop](use/start-a-desktop.md) or [run your first job](get-started/first-job.md).
 
--   **I'm doing my own research**
+-   **Doing your own research**
 
     See whether [FarmShare is right for your work](get-started/is-farmshare-right.md), then [where to put your files](get-started/where-to-put-files.md).
 
--   **I'm teaching a class**
+-   **Teaching a class**
 
-    [Teaching with FarmShare](teaching/index.md) covers setting up a course and when to ask us.
+    [Teaching with FarmShare](teaching/index.md) covers course setup and how far ahead to ask.
 
--   **I've used Sherlock**
+-   **Coming from Sherlock**
 
     [Coming from Sherlock](get-started/coming-from-sherlock.md) lists what works differently here.
 

@@ -12,7 +12,7 @@ This page covers common problems with [OnDemand]({{ facts.ondemand_url }}) sessi
 
 ## My session says "Completed" right after I launch it
 
-Your session started and then stopped immediately. Most of the time this happens because your home directory is full. OnDemand writes a few small files to your home directory every time a session starts, and when there's no room, the session can't start.
+This usually means your home directory is full. OnDemand writes a few small files to your home directory every time a session starts, and when there's no room, the session can't start.
 
 Check how much space you're using. The Files menu in OnDemand may not work while your home directory is full, so connect with SSH instead:
 
@@ -21,7 +21,7 @@ ssh SUNetID@{{ facts.login_host }}
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space, which `du` shows as `{{ facts.home_quota_du }}`. If you're close to that, see [Check and free up space](../use/free-up-space.md) to find what's taking it up. Caches from pip, conda and similar tools are the usual culprits, and they're safe to delete:
+We give everyone {{ facts.home_quota }} of home space, which `du` shows as `{{ facts.home_quota_du }}`. If you're close to that, see [Check and free up space](../use/free-up-space.md) to find what's taking it up. Caches from pip, conda and similar tools often take the most space, and they're safe to delete:
 
 ```sh
 rm -rf ~/.cache/*
@@ -33,13 +33,13 @@ If your home directory isn't full and this is your first time using FarmShare, s
 
 Your FarmShare account hasn't been fully set up yet. The part of your account that lets you run sessions and jobs is created the first time you log in to a login node, and OnDemand doesn't do that for you.
 
-To fix it, open [OnDemand]({{ facts.ondemand_url }}) and select **Clusters** > **FarmShare Shell Access**. Once the terminal opens, you're done; you can close it. Then start your session again.
+To fix it, open [OnDemand]({{ facts.ondemand_url }}) and select **Clusters** > **FarmShare Shell Access**. When the terminal opens, close it and start your session again.
 
 Logging in once with `ssh SUNetID@{{ facts.login_host }}` does the same thing.
 
 ## My desktop is stuck on "Connecting", or noVNC says it can't connect
 
-This usually means something went wrong on our side, often during an outage or right after maintenance. Check {{ facts.announce_channel }} for news.
+This is usually caused by an outage or recent maintenance. Check {{ facts.announce_channel }} for announcements.
 
 If there's no outage, delete the session and start a new one. In OnDemand, go to **My Interactive Sessions** and select **Delete** on the stuck session. Anything unsaved in that session is lost, but files you saved to your home or scratch directory are still there.
 
@@ -94,6 +94,6 @@ install.packages("packagename")
 
 The packages go into your personal library, so RStudio can load them afterward. Some packages also need system libraries that only we can install. If the install error mentions a missing library, [ask us](get-help.md) and include the package name and the full error.
 
-## Still stuck
+## Getting help
 
-[Get help](get-help.md) explains what to send us so we can sort it out quickly. Include the session type, the time it failed, and any error text, copied as text rather than a screenshot.
+[Get help](get-help.md) lists what to include in a support request. For OnDemand problems, include the session type, the time it failed, and any error text, copied as text rather than a screenshot.
