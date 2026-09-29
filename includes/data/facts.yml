@@ -30,3 +30,16 @@ facts:
   gpus_per_node: 4
   gpu_model: NVIDIA L40S
   ondemand_apps: [FarmShare Desktop, Caddyshack Desktop, JupyterLab, MATLAB, RStudio, VS Code]
+  # From the FarmShare admin's draft docs (update-docs branch)
+  os: Ubuntu 24.04 LTS
+  python_system_version: "3.12.3"
+  python_module_version: "3.14.2"
+  kerberos_lifetime: 25 hours
+  kerberos_renewable: 7 days
+  host_key_ed25519: "SHA256:bKb1Znir/1tOg+TMyALDYWeK0lclsulriDN8aOvWteU"
+  host_key_rsa: "SHA256:o5E5OOkaxwF+CzKT5A2/DNSmDzljTYs/a1V7Fm6ssSw"
+  globus_endpoint: SRCC FarmShare
+  globus_url: https://app.globus.org/file-manager?origin_id=13818aec-5644-11e9-9e6e-0266b1fe9f9e
+  afs_web_host: cardinal.stanford.edu
+  shell_access_url: https://ondemand.farmshare.stanford.edu/pun/sys/shell/ssh
+  sponsorship_rates_url: https://uit.stanford.edu/rates/sponsorship
