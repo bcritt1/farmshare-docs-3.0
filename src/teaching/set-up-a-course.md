@@ -13,14 +13,16 @@ You don't need us to set anything up for students just to use FarmShare. Anyone 
 
 When we set up a course, we create a directory for it at `/home/classes/<dept>/<number>`, for example `/home/classes/cs/101`. You own the directory.
 
-We also create two Stanford workgroups to control who can get in:
+We also create two Stanford workgroups for the course:
 
-| Workgroup | Who belongs in it | What they can do in the course directory |
+| Workgroup | Who belongs in it | Who manages it |
 |---|---|---|
-| `farmshare:<dept>-<number>-staff` | You and your TAs or CAs | Read and write |
-| `farmshare:<dept>-<number>` | Your students | Read |
+| `farmshare:<dept>-<number>-staff` | You and your TAs or CAs | You |
+| `farmshare:<dept>-<number>` | Your students | Your course staff |
 
-You manage the staff workgroup, and the staff workgroup manages the student workgroup. That way your TAs can add and remove students without waiting for you.
+Your course staff can add and change files in the course directory. Everyone else can read them, and that includes other FarmShare users as well as your students. That's fine for most course materials. If some files shouldn't be visible outside the class, like solutions or student data, tell us when you ask and we'll work out permissions with you.
+
+Because the staff workgroup manages the student workgroup, your TAs can add and remove students without waiting for you.
 
 If you need scratch space for the course, for large datasets that students all read, ask for a class scratch directory at the same time.
 
@@ -42,7 +44,7 @@ Add your TAs to the staff workgroup, and have them add students to the student w
 
 Each student also needs to log in to FarmShare once before the first assignment. The first login finishes creating their account, and until then OnDemand and job submission won't work for them. [Log in for the first time](../get-started/first-login.md) is a good page to send them.
 
-We don't create a separate directory for each student. Students keep their own work in their home or scratch directories. If you want students to hand in work through the course directory, ask us for a drop box. We can set permissions so students can add files but not see each other's. See [Add students and TAs](add-students-and-tas.md).
+We don't create a separate directory for each student. Students keep their own work in their home or scratch directories. If you want students to hand in work through the course directory, ask us for drop-box folders, and we'll set up permissions for them. See [Add students and TAs](add-students-and-tas.md).
 
 ## If something goes wrong before class
 

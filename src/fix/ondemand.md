@@ -18,7 +18,7 @@ ssh SUNetID@{{ facts.login_host }}
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space. If you're close to that, see [Check and free up space](../use/free-up-space.md) to find what's taking it up. Caches from pip, conda and similar tools are the usual culprits, and they're safe to delete:
+We give everyone {{ facts.home_quota }} of home space, which `du` shows as `{{ facts.home_quota_du }}`. If you're close to that, see [Check and free up space](../use/free-up-space.md) to find what's taking it up. Caches from pip, conda and similar tools are the usual culprits, and they're safe to delete:
 
 ```sh
 rm -rf ~/.cache/*
@@ -42,11 +42,17 @@ If there's no outage, delete the session and start a new one. In OnDemand, go to
 
 ## My password won't unlock the desktop
 
-The desktop's screen lock has a known problem: it often won't accept your SUNet password, even when you type it correctly. You're not doing anything wrong.
+The desktop locks itself after it's been idle for a while, and it unlocks with your SUNet password. Sometimes it rejects the password even when you type it correctly. Characters can get changed on the way from your keyboard, through your browser, to the remote desktop.
 
-If you're already locked out, delete the session from **My Interactive Sessions** and start a new one. Save your work often while this is unfixed, because deleting the session loses anything unsaved.
+Try typing the password again, slowly. If that doesn't work, paste it in instead:
 
-To stop it from happening again, turn off the lock in each new desktop. Open **Applications** > **Settings** > **Xfce Screensaver**, go to the **Lock Screen** tab, and turn off **Enable Lock Screen**. Your own computer's screen lock still protects the session, since the desktop only runs in your browser.
+1. Open the drawer on the left edge of the desktop window and select the clipboard icon.
+2. Paste your password into the text box there, then close the drawer.
+3. Click in the password field on the desktop and press ++ctrl+shift+v++.
+
+If you still can't get in, you can delete the session from **My Interactive Sessions** and start a new one, but anything unsaved in it is lost. If there's work in that session you need, [ask us](get-help.md) before you delete it. We can unlock a running session for you.
+
+To keep it from happening, you can turn the lock off in each new desktop. Open **Applications** > **Settings** > **Xfce Screensaver**, go to the **Lock Screen** tab, and turn off **Enable Lock Screen**. If you do, lock your own computer when you step away, because anyone using your browser could get into the session.
 
 ## My session is waiting in the queue
 

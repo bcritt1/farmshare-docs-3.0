@@ -7,7 +7,8 @@ facts:
   ondemand_url: https://ondemand.farmshare.stanford.edu
   dtn_host: dtn.farmshare.stanford.edu
   announce_channel: "#farmshare-announce"
-  home_quota: 50 GB        # verified by user from recent tickets, 2026-09-29
+  home_quota: 50 GB        # verified: staff give 48 GiB (~51 GB) in support replies
+  home_quota_du: 48G       # how the limit shows in `du -sh` output (GiB)
   purge_days: 90           # unverified: from staff draft
   default_runtime: 2 hours
   max_runtime: 2 days
