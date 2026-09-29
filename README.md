@@ -41,6 +41,15 @@ Only four lines in `mkdocs.yml` name the owner or URL: `site_url`, `repo_name`,
 `stanford-rc/farmshare-docs`), update those. For a custom domain such as
 `docs.farmshare.stanford.edu`, also add a `src/CNAME` file with the domain.
 
+## Where This Differs From the Sherlock Docs
+
+The setup, checks, deploy and page layout follow the Sherlock docs. There are
+two deliberate differences:
+
+- Headings use title case. Sherlock uses sentence case.
+- The checks include a Vale prose-lint job (`styles/FarmShare/`) that Sherlock
+  doesn't have.
+
 ## Where things live
 
 | Path | What it is |
