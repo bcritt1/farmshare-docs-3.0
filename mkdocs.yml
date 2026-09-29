@@ -1,0 +1,212 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+#
+# FarmShare docs 3.0. Setup follows stanford-rc/www.sherlock.stanford.edu.
+#
+# To move or rename the repo, change only site_url, repo_url, repo_name
+# and edit_uri below. Nothing else hard-codes the owner or URL.
+
+site_name:        FarmShare
+site_description: User documentation for FarmShare, Stanford's cluster for coursework and unsponsored research.
+site_url:         https://stanford-rc.github.io/farmshare-docs-3.0/
+
+repo_name: stanford-rc/farmshare-docs-3.0
+repo_url:  https://github.com/stanford-rc/farmshare-docs-3.0
+edit_uri:  edit/main/src/
+
+copyright: >-
+  Copyright &copy; 2026 &mdash;
+  <a href='mailto:srcc-support@stanford.edu'>Stanford Research Computing</a>
+
+docs_dir: src
+site_dir: site
+
+validation:
+  omitted_files: warn
+  absolute_links: relative_to_docs
+  unrecognized_links: warn
+  anchors: warn
+  nav:
+    omitted_files: info
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.annotations
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/stylesheets/farmshare.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/earth-americas
+      link: https://srcc.stanford.edu
+      name: Stanford Research Computing
+    - icon: fontawesome/brands/slack
+      link: https://srcc.slack.com/
+      name: SRCC Users Slack workspace
+
+plugins:
+  - search
+  - macros:
+      on_error_fail: true
+      include_yaml:
+        - includes/data/facts.yml
+  - redirects:
+      redirect_maps: {}
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: "#"
+      toc_depth: 3
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      base_path: [includes]
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Get started:
+      - "Is FarmShare right for me?": get-started/is-farmshare-right.md
+      - Log in for the first time: get-started/first-login.md
+      - Run your first job: get-started/first-job.md
+      - Where to put your files: get-started/where-to-put-files.md
+      - Coming from Sherlock: get-started/coming-from-sherlock.md
+  - Use FarmShare:
+      - Work in your browser:
+          - Start a desktop: use/start-a-desktop.md
+          - Use JupyterLab: use/jupyterlab.md
+          - Use RStudio: use/rstudio.md
+          - Use VS Code: use/vs-code.md
+          - Run GUI programs: use/gui-programs.md
+          - Use Caddyshack for EE courses: use/caddyshack.md
+      - Run jobs:
+          - Submit a batch job: use/batch-jobs.md
+          - Get an interactive session: use/interactive-sessions.md
+          - Use GPUs: use/gpus.md
+          - Run long or big-memory jobs: use/long-and-bigmem-jobs.md
+          - Run many jobs at once: use/job-arrays.md
+          - Run parallel and MPI jobs: use/mpi.md
+          - Job options reference: use/job-options.md
+          - How jobs get scheduled: use/scheduling.md
+      - Manage your files:
+          - Check and free up space: use/free-up-space.md
+          - Move files to and from FarmShare: use/transfer.md
+          - Share files with a group: use/sharing.md
+          - Use AFS: use/afs.md
+      - Connect in other ways:
+          - Set up SSH: use/ssh-setup.md
+          - SSH to a compute node: use/ssh-compute-node.md
+          - Use the login nodes: use/login-nodes.md
+  - Software:
+      - Find installed software: software/modules.md
+      - Request software: software/request.md
+      - Python: software/python.md
+      - R: software/r.md
+      - Conda-style environments: software/conda-style-environments.md
+      - Install software yourself: software/install-yourself.md
+      - Containers: software/containers.md
+      - AI coding agents: software/ai-coding-agents.md
+      - Licensed software:
+          - Overview: software/licensed/index.md
+          - MATLAB: software/licensed/matlab.md
+          - Gaussian and GaussView: software/licensed/gaussian.md
+          - Stata: software/licensed/stata.md
+          - Ansys and HFSS: software/licensed/ansys.md
+          - SAS: software/licensed/sas.md
+          - Mathematica: software/licensed/mathematica.md
+          - Gurobi: software/licensed/gurobi.md
+          - Schrödinger: software/licensed/schrodinger.md
+          - Sentaurus: software/licensed/sentaurus.md
+  - Teaching:
+      - Overview and timeline: teaching/index.md
+      - Set up a course: teaching/set-up-a-course.md
+      - Add students and TAs: teaching/add-students-and-tas.md
+      - Request course software or reserved nodes: teaching/course-software-and-reservations.md
+      - Get ready for class day: teaching/class-day.md
+      - Teaching materials: teaching/materials.md
+  - Fix a problem:
+      - OnDemand and desktops: fix/ondemand.md
+      - Storage and files: fix/storage.md
+      - Logging in: fix/logging-in.md
+      - Jobs: fix/jobs.md
+      - GPUs: fix/gpus.md
+      - Software and modules: fix/software.md
+      - AFS: fix/afs.md
+      - Common questions: fix/common-questions.md
+      - Get help: fix/get-help.md
+  - Reference:
+      - Limits: reference/limits.md
+      - Storage locations and quotas: reference/storage.md
+      - Hardware: reference/hardware.md
+      - Software list: reference/software-list.md
+      - Policies: reference/policies.md
+      - Glossary: reference/glossary.md
+  - Additional resources:
+      - Other Stanford Research Computing services:
+          - Sherlock: resources/sherlock.md
+          - Oak: resources/oak.md
+          - Nero: resources/nero.md
+          - Carina: resources/carina.md
+          - Marlowe: resources/marlowe.md
+      - Outside Stanford Research Computing:
+          - NSF ACCESS: resources/nsf-access.md
+          - Google Cloud: resources/google-cloud.md
+  - About:
+      - "What's changed": about/whats-changed.md
+      - Supporting FarmShare: about/supporting-farmshare.md

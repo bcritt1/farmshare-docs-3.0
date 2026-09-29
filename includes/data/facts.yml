@@ -1,0 +1,12 @@
+# Single source for numbers and names used on the site.
+# Use them in pages as {{ facts.home_quota }}, etc.
+# Values marked "unverified" wait on the facts-verification ticket.
+facts:
+  support_email: srcc-support@stanford.edu
+  login_host: login.farmshare.stanford.edu
+  ondemand_url: https://ondemand.farmshare.stanford.edu
+  dtn_host: dtn.farmshare.stanford.edu
+  announce_channel: "#farmshare-announce"
+  home_quota: 50 GB        # unverified: tickets say 48 GiB
+  purge_days: 90           # unverified: from staff draft
+  default_runtime: 2 hours # unverified: from staff draft

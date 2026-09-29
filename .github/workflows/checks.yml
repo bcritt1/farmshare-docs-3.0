@@ -1,0 +1,49 @@
+name: checks
+
+# Only a few things block a merge: the build (broken internal links),
+# malformed Markdown, broken external links, and the Vale rules set to
+# "error" (placeholders, chatbot phrases). Other Vale rules only warn.
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: mkdocs build --strict
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          config: .github/workflows/config/.markdownlint.yml
+          globs: src/**/*.md
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config .github/workflows/config/lychee.toml 'src/**/*.md'
+          fail: true
+
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: errata-ai/vale-action@v2
+        with:
+          files: src
+          fail_on_error: true

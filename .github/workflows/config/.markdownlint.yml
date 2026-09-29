@@ -1,0 +1,13 @@
+# Adapted from the Sherlock docs' markdownlint config.
+MD007:
+  indent: 4
+MD012: false
+MD013: false
+MD014: false
+MD026:
+  punctuation: ".,;"
+MD030: false
+MD033: false
+MD041: false
+MD046: false
+MD053: false

@@ -1,0 +1,12 @@
+extends: existence
+message: "Chatbot phrasing: '%s'. Docs don't talk to the reader like a chat assistant."
+level: error
+ignorecase: true
+tokens:
+  - I hope this helps
+  - Certainly!
+  - Of course!
+  - Great question
+  - let me know if
+  - feel free to ask
+  - as an AI

@@ -1,0 +1,13 @@
+# Adapted from the Sherlock docs' lychee config.
+scheme = ["https", "http"]
+exclude = [
+  "\\{\\{",
+  "mailto:",
+  "localhost",
+  "\\.md(#|$)",
+  "srcc\\.slack\\.com",
+  "ondemand\\.farmshare\\.stanford\\.edu",
+]
+accept = [200, 206, 303, 403, 429]
+timeout = 60
+max_retries = 3

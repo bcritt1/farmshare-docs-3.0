@@ -1,0 +1,15 @@
+extends: existence
+message: "Consider cutting or replacing '%s' (style guide word list)."
+level: warning
+ignorecase: true
+tokens:
+  - please
+  - simply
+  - just
+  - easily
+  - in order to
+  - leverage
+  - delve
+  - seamless
+  - robust
+  - pivotal

@@ -1,0 +1,6 @@
+extends: existence
+message: "Unfilled placeholder: '%s'."
+level: error
+scope: text
+raw:
+  - '\[(insert|add|TODO|TBD)[^\]]*\]'
