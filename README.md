@@ -10,7 +10,7 @@ python3 -m venv .venv
 .venv/bin/mkdocs serve
 ```
 
-Then open http://127.0.0.1:8000.
+Then open http://127.0.0.1:8000/farmshare-docs-3.0/. The path matches `site_url` in `mkdocs.yml`, so it changes if the repo is renamed. `mkdocs serve` keeps running until you stop it with Ctrl-C.
 
 ## Publish on GitHub Pages
 
