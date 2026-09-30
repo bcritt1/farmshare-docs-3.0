@@ -29,8 +29,8 @@ Canvas course. See [Teaching Materials](materials.md).
 ## Who Asks
 
 Requests for a course have to come from the instructor of record. Your TAs can
-help with the details, and once the course is set up they can manage the
-student list themselves. See [Set Up a Course](set-up-a-course.md).
+help with the details, and once the course is set up they can manage the student
+list themselves. See [Set Up a Course](set-up-a-course.md).
 
 ## When to Ask
 
@@ -46,13 +46,13 @@ busiest time for support.
    reservations. See [Set Up a Course](set-up-a-course.md) for what to include.
 2. Once we've set it up, add your TAs to the staff workgroup and have them add
    students. See [Add Students and TAs](add-students-and-tas.md).
-3. Test the course software and your assignments on FarmShare yourself, the
-   way students will run them.
+3. Test the course software and your assignments on FarmShare yourself, the way
+   students will run them.
 4. Before the first assignment, go through [Get Ready for Class
    Day](class-day.md) with your students.
 
 ## Where to Get Help
 
 Email {{ facts.support_email }} with "FarmShare" in the subject. We answer
-during business hours. If something breaks close to a class, add "urgent" to
-the subject. See [Get Help](../fix/get-help.md).
+during business hours. If something breaks close to a class, add "urgent" to the
+subject. See [Get Help](../fix/get-help.md).

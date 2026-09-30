@@ -26,9 +26,10 @@ Programs with a graphical interface run in a [FarmShare
 Desktop](../use/start-a-desktop.md) in OnDemand. Students open a terminal in the
 desktop, load the module and start the program.
 
-For commercial software, check [Licensed Software](../software/licensed/index.md)
-first. If what you need isn't licensed on FarmShare yet, tell us what license
-your department has or who is paying for one.
+For commercial software, check [Licensed
+Software](../software/licensed/index.md) first. If what you need isn't licensed
+on FarmShare yet, tell us what license your department has or who is paying for
+one.
 
 ## Reserved Nodes and GPUs
 
@@ -67,7 +68,6 @@ Test the software on FarmShare yourself, the way your students will use it,
 before the first assignment that needs it. Problems are much easier for us to
 fix before a deadline than during one.
 
-If you're not sure whether FarmShare can handle the whole class working at
-once, ask us. We can tell you what to expect and which desktop size or job
-settings to recommend to students. See also [Get Ready for Class
-Day](class-day.md).
+If you're not sure whether FarmShare can handle the whole class working at once,
+ask us. We can tell you what to expect and which desktop size or job settings to
+recommend to students. See also [Get Ready for Class Day](class-day.md).

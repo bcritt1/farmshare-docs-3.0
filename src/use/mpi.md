@@ -79,29 +79,29 @@ session](interactive-sessions.md) with the number of cores you want, then run
 ## Run Across More Than One Node
 
 If your job fits on one node, keep it on one node. It's simpler, and a smaller
-request usually starts sooner. If you need more processes than one node has, ask for
-nodes and tasks per node:
+request usually starts sooner. If you need more processes than one node has, ask
+for nodes and tasks per node:
 
 ```bash
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=16
 ```
 
-Test a small version of the job first. Check that the output reports the
-number of ranks you expected, not the same rank repeated, which means the
-processes started separately instead of as one MPI program.
+Test a small version of the job first. Check that the output reports the number
+of ranks you expected, not the same rank repeated, which means the processes
+started separately instead of as one MPI program.
 
 ## Things to Know
 
-Ask for the number of cores your program uses. A program that uses 4 cores
-gets no faster if you ask for 16, and a bigger request waits longer to start.
-On some nodes, a request for one CPU gets two, because each core runs two
-hardware threads.
+Ask for the number of cores your program uses. A program that uses 4 cores gets
+no faster if you ask for 16, and a bigger request waits longer to start. On some
+nodes, a request for one CPU gets two, because each core runs two hardware
+threads.
 
 The per-person limits on CPUs and jobs are on [Limits](../reference/limits.md).
 
 ## If Something Goes Wrong
 
-See [Jobs](../fix/jobs.md). If an MPI program runs but its processes don't
-talk to each other, [ask us](../fix/get-help.md), and include your batch
-script and output.
+See [Jobs](../fix/jobs.md). If an MPI program runs but its processes don't talk
+to each other, [ask us](../fix/get-help.md), and include your batch script and
+output.

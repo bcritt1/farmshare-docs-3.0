@@ -9,11 +9,10 @@ The Caddyshack Desktop is an OnDemand desktop for Electrical Engineering
 courses. It runs on FarmShare and comes set up for EE course software, and from
 it you can connect to the EE department's `caddy` machines.
 
-Two groups run the pieces you'll use. We, Stanford Research Computing (SRC),
-run FarmShare and OnDemand, including the Caddyshack Desktop session itself.
-EE IT runs the `caddy` machines, the EE course software and the course setup
-scripts. Knowing which is which gets your question to the right people the
-first time.
+Two groups run the pieces you'll use. We, Stanford Research Computing (SRC), run
+FarmShare and OnDemand, including the Caddyshack Desktop session itself. EE IT
+runs the `caddy` machines, the EE course software and the course setup scripts.
+Knowing which is which gets your question to the right people the first time.
 
 **Before you start:** log in to FarmShare once. See [Log In for the First
 Time](../get-started/first-login.md).
@@ -28,8 +27,8 @@ Time](../get-started/first-login.md).
 
 You can run one Caddyshack Desktop at a time, with up to
 {{ facts.qos.caddyshack.cpus }} CPUs and {{ facts.qos.caddyshack.mem }} of
-memory. To start a new one, delete the old session in **My Interactive
-Sessions** first.
+memory. To start a new one, delete the old session in
+**My Interactive Sessions** first.
 
 ## Connect to the Caddy Machines
 
@@ -51,9 +50,9 @@ desktop to one of the `caddy` machines, which EE IT runs:
     tcsh
     ```
 
-Run your course's setup commands from `tcsh`, not from the default `bash`
-shell. Course setup files written for `tcsh` don't work in `bash`, so don't add
-them to your `~/.bashrc`.
+Run your course's setup commands from `tcsh`, not from the default `bash` shell.
+Course setup files written for `tcsh` don't work in `bash`, so don't add them to
+your `~/.bashrc`.
 
 If `ssh` sends you somewhere other than a caddy machine, check `~/.ssh/config`
 on FarmShare for a `Host` entry that matches too broadly.

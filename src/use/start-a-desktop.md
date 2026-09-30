@@ -4,9 +4,9 @@ tags:
     - desktop
 ---
 
-A FarmShare Desktop is a Linux desktop that runs on a FarmShare compute node
-and opens in your web browser. Use it for programs that need a graphical
-interface, or when you want a terminal and a file browser side by side.
+A FarmShare Desktop is a Linux desktop that runs on a FarmShare compute node and
+opens in your web browser. Use it for programs that need a graphical interface,
+or when you want a terminal and a file browser side by side.
 
 **Before you start:** log in to FarmShare once. See [Log In for the First
 Time](../get-started/first-login.md).
@@ -54,8 +54,8 @@ job](batch-jobs.md).
 You can run one FarmShare Desktop at a time. Desktops share compute nodes with
 everyone else's interactive work, so when FarmShare is busy your session may
 wait in the queue before it starts. Smaller sizes usually start sooner. To see
-how busy FarmShare is before you launch, select **Clusters** > **System
-Status** in OnDemand.
+how busy FarmShare is before you launch, select **Clusters** > **System Status**
+in OnDemand.
 
 The desktop locks itself after it's been idle for a while. It unlocks with your
 SUNet password.

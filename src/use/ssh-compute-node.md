@@ -8,8 +8,8 @@ You can connect with SSH to a compute node while you have a job running on it.
 This is mainly useful for checking on a running job, for example to watch its
 memory and CPU use with `top`.
 
-**Before you start:** you need a job running on the node, either a batch job,
-an interactive session or an OnDemand app.
+**Before you start:** you need a job running on the node, either a batch job, an
+interactive session or an OnDemand app.
 
 ## Find the Node
 
@@ -48,16 +48,16 @@ connection is refused with this message:
 Access denied by pam_slurm_adopt: you have no active jobs on this node
 ```
 
-This keeps compute nodes free for the jobs that were scheduled on them. When
-you connect, your SSH session counts as part of your job and shares its cores
-and memory, and it ends when the job ends.
+This keeps compute nodes free for the jobs that were scheduled on them. When you
+connect, your SSH session counts as part of your job and shares its cores and
+memory, and it ends when the job ends.
 
 Use the short node name, as in the examples. The node's full public hostname
 doesn't work from outside FarmShare's private network.
 
 To work interactively on a compute node, you don't need SSH. Start an
-[interactive session](interactive-sessions.md) instead, which gives you a
-shell on a compute node directly.
+[interactive session](interactive-sessions.md) instead, which gives you a shell
+on a compute node directly.
 
 ## If Something Goes Wrong
 

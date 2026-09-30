@@ -4,8 +4,8 @@ tags:
 ---
 
 SRC has Canvas modules that teach students how to use FarmShare and
-high-performance computing in general. You can import them into your own
-Canvas course, so students have them alongside the rest of the class material.
+high-performance computing in general. You can import them into your own Canvas
+course, so students have them alongside the rest of the class material.
 
 ## Find the Modules
 

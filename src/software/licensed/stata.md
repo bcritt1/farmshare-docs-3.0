@@ -17,8 +17,8 @@ module load stata
 stata
 ```
 
-You can also run these commands on a login node for small jobs, or in a
-terminal in a FarmShare Desktop. See [Get an Interactive
+You can also run these commands on a login node for small jobs, or in a terminal
+in a FarmShare Desktop. See [Get an Interactive
 Session](../../use/interactive-sessions.md).
 
 ## Run a Do-File in a Batch Job

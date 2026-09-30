@@ -41,5 +41,5 @@ up to {{ facts.max_runtime }}, or {{ facts.long_max_runtime }} with
 `--qos=long`. Files in scratch that haven't changed in {{ facts.purge_days }}
 days are removed on both.
 
-If your work is sponsored research, or needs more than FarmShare's limits
-allow, it belongs on Sherlock. See [Sherlock](../resources/sherlock.md).
+If your work is sponsored research, or needs more than FarmShare's limits allow,
+it belongs on Sherlock. See [Sherlock](../resources/sherlock.md).

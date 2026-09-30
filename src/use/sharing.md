@@ -6,8 +6,8 @@ tags:
 
 To share files with other people on FarmShare, put them in a directory those
 people can reach and set the file permissions to let them in. FarmShare doesn't
-create shared group space automatically, but classes and groups can ask us for
-a shared directory.
+create shared group space automatically, but classes and groups can ask us for a
+shared directory.
 
 ## Ask for a Group Directory
 
@@ -43,8 +43,8 @@ To see which groups you're in:
 groups
 ```
 
-When you create files in a shared directory, give the group the access it
-needs. For example, to let the group read and write everything in a folder:
+When you create files in a shared directory, give the group the access it needs.
+For example, to let the group read and write everything in a folder:
 
 ```bash
 chgrp -R mygroup /home/groups/mygroup/data
@@ -52,8 +52,8 @@ chmod -R g+rwX /home/groups/mygroup/data
 ```
 
 The capital `X` gives execute permission to directories but not to ordinary
-files. People need execute permission on a directory to open anything inside
-it, and on every directory above it in the path.
+files. People need execute permission on a directory to open anything inside it,
+and on every directory above it in the path.
 
 Don't make files readable or writable by everyone (`chmod 777`) to get around a
 permission problem. Anyone who logs in to FarmShare could then read or change
@@ -63,17 +63,17 @@ us](../fix/get-help.md).
 ## When Group Permissions Aren't Enough
 
 Sometimes one group isn't enough, for example when each student needs a private
-drop-box folder that only course staff can read. Access control lists (ACLs)
-can give individual people their own access to a file or folder. Ask us if you
-need them, and describe who should be able to read or change what. We'll set
-them up with you, or suggest a simpler arrangement with groups if one works.
+drop-box folder that only course staff can read. Access control lists (ACLs) can
+give individual people their own access to a file or folder. Ask us if you need
+them, and describe who should be able to read or change what. We'll set them up
+with you, or suggest a simpler arrangement with groups if one works.
 
 ## Sharing from Your Home Directory
 
 We don't recommend opening up your home directory to share files. It holds
-settings, keys and other private files that shouldn't be readable by others.
-Ask for a group directory instead, or copy the files to a place the other
-people can already reach.
+settings, keys and other private files that shouldn't be readable by others. Ask
+for a group directory instead, or copy the files to a place the other people can
+already reach.
 
 To share with people who don't use FarmShare, copy the files off FarmShare
 first. See [Move Files to and from FarmShare](transfer.md).

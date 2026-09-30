@@ -3,8 +3,8 @@ tags:
     - teaching
 ---
 
-Most problems students hit in the first session on FarmShare can be caught a
-few days ahead. Go through these checks before a class or assignment that uses
+Most problems students hit in the first session on FarmShare can be caught a few
+days ahead. Go through these checks before a class or assignment that uses
 FarmShare, and pass the student ones on to your class.
 
 ## Students Have Logged In Once
@@ -29,9 +29,9 @@ du -sh ~
 ```
 
 If it's close to `{{ facts.home_quota_du }}`, [Check and Free Up
-Space](../use/free-up-space.md) shows how to clear it. For course data sets,
-use the course directory or class scratch space rather than copies in each
-student's home directory.
+Space](../use/free-up-space.md) shows how to clear it. For course data sets, use
+the course directory or class scratch space rather than copies in each student's
+home directory.
 
 ## The Software Works
 
@@ -57,13 +57,13 @@ To help students get started:
 - Students can check how busy FarmShare is in OnDemand under **Clusters** >
   **System Status** before they start a session.
 
-If you expect the whole class to work at the same time, [ask us](../fix/get-help.md)
-what to expect.
+If you expect the whole class to work at the same time, [ask
+us](../fix/get-help.md) what to expect.
 
 ## GPUs Are Reserved If You Need Them
 
-FarmShare has {{ facts.gpu_nodes * facts.gpus_per_node }} GPUs for everyone,
-and batch jobs that ask for GPUs are scheduled ahead of interactive sessions. If
+FarmShare has {{ facts.gpu_nodes * facts.gpus_per_node }} GPUs for everyone, and
+batch jobs that ask for GPUs are scheduled ahead of interactive sessions. If
 students need a GPU in a desktop or interactive session, the wait can be long
 and hard to predict. For an assignment that depends on GPUs, ask us to reserve
 some for the class. See [Request Course Software or Reserved

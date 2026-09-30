@@ -6,8 +6,8 @@ tags:
 
 This table lists commonly used software on FarmShare and how to get it. It isn't
 the full list. For every module, run `module avail`, and to look for something
-by name, run `module spider <name>`. Versions change, so check there rather
-than relying on a version you've seen before.
+by name, run `module spider <name>`. Versions change, so check there rather than
+relying on a version you've seen before.
 
 | Software | How to get it | More |
 |---|---|---|
@@ -36,8 +36,8 @@ than relying on a version you've seen before.
 | Sentaurus | Provided by EE in the Caddyshack Desktop | [Sentaurus](../software/licensed/sentaurus.md) |
 | EE course software | Caddyshack Desktop | [Use Caddyshack for EE Courses](../use/caddyshack.md) |
 
-"Built in" means the program comes with the operating system,
-{{ facts.os }}, and runs without loading a module.
+"Built in" means the program comes with the operating system, {{ facts.os }},
+and runs without loading a module.
 
 If something you need isn't here or in `module avail`, see [Request
 Software](../software/request.md) or [Install Software

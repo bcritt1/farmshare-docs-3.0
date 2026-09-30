@@ -5,8 +5,8 @@ tags:
 
 Gaussian and its graphical interface, GaussView, are licensed on FarmShare and
 are used in chemistry courses. Both come from the `gaussian` module. Use
-GaussView in a FarmShare Desktop to build molecules and look at results, and
-run longer calculations as batch jobs.
+GaussView in a FarmShare Desktop to build molecules and look at results, and run
+longer calculations as batch jobs.
 
 ## Use GaussView
 

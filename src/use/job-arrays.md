@@ -4,8 +4,8 @@ tags:
     - jobs
 ---
 
-A job array runs the same batch script many times, once for each item in a
-list, such as a set of input files or parameter values. You submit it with one
+A job array runs the same batch script many times, once for each item in a list,
+such as a set of input files or parameter values. You submit it with one
 `sbatch` command, and Slurm runs the copies, called tasks, as room becomes
 available.
 
@@ -32,8 +32,8 @@ python3 process.py input_${SLURM_ARRAY_TASK_ID}.txt   # (4)!
 
 1. Runs ten tasks, numbered 1 to 10. You can also give a list, such as
    `--array=1,4,7`, or a step, such as `--array=0-100:10`.
-2. The resources on the other lines apply to each task, not to the whole
-   array. Each task here gets one CPU, 4 GB of memory and 30 minutes.
+2. The resources on the other lines apply to each task, not to the whole array.
+   Each task here gets one CPU, 4 GB of memory and 30 minutes.
 3. Gives each task its own output file. `%A` is the array's job ID and `%a` is
    the task number.
 4. `SLURM_ARRAY_TASK_ID` holds the task's number, so each task works on a
@@ -91,9 +91,9 @@ array that would take you over the submitted limit. For other QoS limits, see
 [Limits](../reference/limits.md).
 
 Arrays work best when each task runs for at least a few minutes. If each piece
-of work takes seconds, group several pieces into one task, for example by
-having each task process ten lines of `inputs.txt`. Thousands of very short
-tasks spend more time being scheduled than running.
+of work takes seconds, group several pieces into one task, for example by having
+each task process ten lines of `inputs.txt`. Thousands of very short tasks spend
+more time being scheduled than running.
 
 ## If Something Goes Wrong
 

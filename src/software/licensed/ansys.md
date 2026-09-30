@@ -39,9 +39,10 @@ If you're using Ansys for sponsored research, use your group's own license on
 ### Teaching with Ansys
 
 For a class tutorial, have each student start their own FarmShare Desktop and
-run Ansys there. Don't have a whole class run it from the **FarmShare Shell
-Access** terminal in OnDemand. That terminal always opens on the same login
-node, and fifty copies of Ansys on one login node run slowly for everyone.
+run Ansys there. Don't have a whole class run it from the
+**FarmShare Shell Access** terminal in OnDemand. That terminal always opens on
+the same login node, and fifty copies of Ansys on one login node run slowly for
+everyone.
 
 Mention Ansys in your course setup request so we can check it before the class.
 See [Request Course Software or Reserved
@@ -66,5 +67,5 @@ directory:
 cp -r /tmp/$USER/myproject ~/
 ```
 
-If the crash happens somewhere other than saving, [tell us](../../fix/get-help.md)
-what you were doing when it crashed.
+If the crash happens somewhere other than saving, [tell
+us](../../fix/get-help.md) what you were doing when it crashed.

@@ -83,6 +83,16 @@ and at most 2 days" is useful. A partition table with node lists isn't. The
 Limits reference page can have a simplified summary table, like Sherlock's
 `sh_part` output, without node names or system detail.
 
+## Don't Explain What Isn't There
+
+Write about what FarmShare has and what readers need to do. Don't justify or
+apologize for things FarmShare doesn't offer, and don't compare it with Sherlock
+features a FarmShare reader wouldn't know about or expect. When readers do ask
+for something FarmShare doesn't do, such as more home space, answer the question
+they asked and point to the alternative. Otherwise, leave it out. For example,
+"Where can I see if FarmShare is having trouble?" is answered by pointing to the
+Slack channel, not by explaining why there's no status page.
+
 ## Formatting
 
 Explanations are paragraphs. Use numbered lists only for steps done in order,

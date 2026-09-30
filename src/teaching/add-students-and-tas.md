@@ -17,9 +17,9 @@ Course](set-up-a-course.md).
 | `farmshare:<dept>-<number>-staff` | You and your TAs or CAs | You |
 | `farmshare:<dept>-<number>` | Your students | Anyone in the staff workgroup |
 
-On FarmShare, the workgroups show up as groups named `farmshare_<dept>-<number>-staff`
-and `farmshare_<dept>-<number>`. That's the name you see in `ls -l` output for
-files in the course directory.
+On FarmShare, the workgroups show up as groups named
+`farmshare_<dept>-<number>-staff` and `farmshare_<dept>-<number>`. That's the
+name you see in `ls -l` output for files in the course directory.
 
 ## Add TAs
 

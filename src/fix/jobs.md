@@ -36,9 +36,9 @@ du -sh ~
 ```
 
 We give everyone {{ facts.home_quota }} of home space, which `du` shows as
-`{{ facts.home_quota_du }}`. If you're at or near that, clear some space.
-Caches from pip, conda and similar tools often take the most, and they're safe
-to delete:
+`{{ facts.home_quota_du }}`. If you're at or near that, clear some space. Caches
+from pip, conda and similar tools often take the most, and they're safe to
+delete:
 
 ```sh
 rm -rf ~/.cache/*
@@ -85,8 +85,7 @@ more than FarmShare allows, or it's sponsored research, it belongs on
 
 ## My Interactive Session Takes a Long Time to Start
 
-Check that you included both `--partition=interactive` and
-`--qos=interactive`:
+Check that you included both `--partition=interactive` and `--qos=interactive`:
 
 ```bash
 salloc --partition=interactive --qos=interactive
@@ -103,9 +102,9 @@ The job ran out of the time it asked for, and Slurm stopped it. The output file
 ends with a line like `CANCELLED AT ... DUE TO TIME LIMIT`, and `sacct` shows
 the state `TIMEOUT`.
 
-Ask for more time with `--time`. The default is {{ facts.default_runtime }},
-and you can ask for up to {{ facts.max_runtime }}, or
-{{ facts.long_max_runtime }} with `--qos=long`. See [Run Long or Big-Memory
+Ask for more time with `--time`. The default is {{ facts.default_runtime }}, and
+you can ask for up to {{ facts.max_runtime }}, or {{ facts.long_max_runtime }}
+with `--qos=long`. See [Run Long or Big-Memory
 Jobs](../use/long-and-bigmem-jobs.md). We generally don't extend jobs that are
 already running, so set the limit with some headroom when you submit.
 
@@ -141,16 +140,16 @@ happening, email {{ facts.support_email }} with the job ID and the node name.
 ## My `#SBATCH` Options Are Ignored
 
 Slurm reads `#SBATCH` lines only at the top of the script, before the first
-command. Any `#SBATCH` line after a command, or after a blank line followed by
-a command, is ignored. Move all of them to right after the `#!/bin/bash` line.
+command. Any `#SBATCH` line after a command, or after a blank line followed by a
+command, is ignored. Move all of them to right after the `#!/bin/bash` line.
 Keep the `#` at the start of each one; it's part of the directive.
 
 ## My Cancelled Job Is Stuck in `CG`
 
 `CG` means the job is completing: Slurm is cleaning up after it. This usually
-clears on its own and doesn't hold up your other jobs. If it's still there
-after a few hours, email {{ facts.support_email }} with the job ID, and we can
-clear it.
+clears on its own and doesn't hold up your other jobs. If it's still there after
+a few hours, email {{ facts.support_email }} with the job ID, and we can clear
+it.
 
 ## Every Job on One Node Fails
 

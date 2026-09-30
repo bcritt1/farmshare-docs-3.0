@@ -21,8 +21,8 @@ Desktop](start-a-desktop.md).
     module load paraview
     ```
 
-    If you're not sure of the module's name, search for it with
-    `module spider`, for example `module spider gaussview`.
+    If you're not sure of the module's name, search for it with `module spider`,
+    for example `module spider gaussview`.
 
 3. Run the program by name:
 
@@ -47,13 +47,13 @@ how they're set up.
 ## Displaying Programs over SSH
 
 You can also display a program on your own computer over SSH with X11
-forwarding, by connecting with `ssh -X` and running the program on a login
-node. This needs an X server on your computer, such as XQuartz on macOS or
-MobaXterm on Windows. It's slower than a desktop and less reliable, so we
-recommend a FarmShare Desktop instead.
+forwarding, by connecting with `ssh -X` and running the program on a login node.
+This needs an X server on your computer, such as XQuartz on macOS or MobaXterm
+on Windows. It's slower than a desktop and less reliable, so we recommend a
+FarmShare Desktop instead.
 
 ## If Something Goes Wrong
 
 For problems with the desktop itself, see [OnDemand and
-Desktops](../fix/ondemand.md). If a module won't load or a program won't
-start, see [Software and Modules](../fix/software.md).
+Desktops](../fix/ondemand.md). If a module won't load or a program won't start,
+see [Software and Modules](../fix/software.md).
