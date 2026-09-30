@@ -6,8 +6,8 @@ tags:
 FarmShare is made up of several kinds of machines, each with its own job. All of
 them run {{ facts.os }}.
 
-<!-- NEEDS REVIEW: Is the bigmem memory limit per job or per user (across
-running jobs)? -->
+!!! review "Needs Review"
+    Is the `bigmem` memory limit per job or per user (across running jobs)?
 
 | Nodes | What they're for |
 |---|---|

@@ -81,8 +81,8 @@ session](../use/interactive-sessions.md) on a compute node.
 
 ## You Know How to Reach Us
 
-<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
-handled? -->
+!!! review "Needs Review"
+    Does adding "urgent" to the subject change how a request is handled?
 
 Email {{ facts.support_email }} with "FarmShare" and "urgent" in the subject if
 something breaks close to class. We answer during business hours, so a problem

@@ -14,8 +14,9 @@ your work needs more than FarmShare allows, see
 A partition is a group of nodes. Choose one with `--partition`. If you don't,
 your job goes to `normal`.
 
-<!-- NEEDS REVIEW: What are the default and maximum times for the interactive
-and caddyshack partitions? -->
+!!! review "Needs Review"
+    What are the default and maximum times for the interactive and caddyshack
+    partitions?
 
 | Partition | For | Default time | Maximum time |
 |---|---|---|---|
@@ -32,8 +33,8 @@ and caddyshack partitions? -->
 These limits apply to everything you're running at once. Choose a quality of
 service (QoS) with `--qos`. If you don't, your job uses `normal`.
 
-<!-- NEEDS REVIEW: Is the bigmem memory limit per job or per user (across
-running jobs)? -->
+!!! review "Needs Review"
+    Is the `bigmem` memory limit per job or per user (across running jobs)?
 
 | QoS | Maximum time | CPUs | Memory | GPUs | Running jobs | Queued jobs |
 |---|---|---|---|---|---|---|

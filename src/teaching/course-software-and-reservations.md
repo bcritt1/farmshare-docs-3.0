@@ -26,8 +26,9 @@ Programs with a graphical interface run in a [FarmShare
 Desktop](../use/start-a-desktop.md) in OnDemand. Students open a terminal in the
 desktop, load the module and start the program.
 
-<!-- NEEDS REVIEW: When course software isn't licensed yet, is "tell us what
-license your department has or who is paying" the right process? -->
+!!! review "Needs Review"
+    When course software isn't licensed yet, is "tell us what license your
+    department has or who is paying" the right process?
 
 For commercial software, check [Licensed
 Software](../software/licensed/index.md) first. If what you need isn't licensed
@@ -36,8 +37,9 @@ one.
 
 ## Reserved Nodes and GPUs
 
-<!-- NEEDS REVIEW: What window can a class reservation cover, and how much lead
-time does it need? -->
+!!! review "Needs Review"
+    What window can a class reservation cover, and how much lead time does it
+    need?
 
 For an assignment, exam or competition that has to run at a set time, we can
 hold some of FarmShare's nodes or GPUs for your class. A reservation covers a
@@ -49,8 +51,9 @@ everyone. If your students need GPUs at the same time, especially near the end
 of the quarter, a reservation is the most reliable way to make sure they get
 them.
 
-<!-- NEEDS REVIEW: What is the class reservation process, and do students use a
-reservation by adding its name to their jobs? -->
+!!! review "Needs Review"
+    What is the class reservation process, and do students use a reservation by
+    adding its name to their jobs?
 
 When a reservation is ready, we'll tell you its name. Students add it to their
 jobs, for example in a batch script:

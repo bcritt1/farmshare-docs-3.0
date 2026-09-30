@@ -71,8 +71,8 @@ TAs](add-students-and-tas.md).
 
 ## If Something Goes Wrong Before Class
 
-<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
-handled? -->
+!!! review "Needs Review"
+    Does adding "urgent" to the subject change how a request is handled?
 
 If something breaks close to a class or a deadline, email
 {{ facts.support_email }} with "FarmShare" and "urgent" in the subject. Our

@@ -66,8 +66,8 @@ libraries, so install a GPU build of the package in a [virtual
 environment](../software/python.md). If you need the CUDA toolkit to compile
 code, load it with `module load {{ facts.cuda_module }}`.
 
-<!-- NEEDS REVIEW: How do you request a GPU in the OnDemand JupyterLab and
-desktop forms? -->
+!!! review "Needs Review"
+    How do you request a GPU in the OnDemand JupyterLab and desktop forms?
 
 The same applies to JupyterLab and desktops in OnDemand: the session only has a
 GPU if you asked for one when you launched it.
@@ -98,8 +98,9 @@ nodes before they can run jobs again.
 
 ## My GPU Job Needs More Than {{ facts.max_runtime }}
 
-<!-- NEEDS REVIEW: Can a GPU job run for up to 7 days on the normal partition
-with the long QoS and one GPU, and which GPU limit applies to it? -->
+!!! review "Needs Review"
+    Can a GPU job run for up to 7 days on the normal partition with the long QoS
+    and one GPU, and which GPU limit applies to it?
 
 The `gpu` partition doesn't allow the `long` QoS. To run a GPU job for up to
 {{ facts.long_max_runtime }}, submit it to the `normal` partition with the

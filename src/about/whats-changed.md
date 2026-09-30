@@ -12,8 +12,9 @@ Day-to-day announcements, such as maintenance and outages, are posted in
 FarmShare moved to new hardware and new storage, with major software updates. It
 now runs {{ facts.os }}.
 
-<!-- NEEDS REVIEW: Can scratch data from before the December 2025 upgrade still
-be copied over, and for how long? -->
+!!! review "Needs Review"
+    Can scratch data from before the December 2025 upgrade still be copied over,
+    and for how long?
 
 Scratch data wasn't moved to the new storage automatically. If you had files in
 scratch before the upgrade and can't find them, email {{ facts.support_email }}

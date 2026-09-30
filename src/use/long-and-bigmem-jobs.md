@@ -36,8 +36,8 @@ Submit to the `bigmem` partition and ask for the memory you need:
 #SBATCH --mem=500G
 ```
 
-<!-- NEEDS REVIEW: Is the bigmem memory limit per job or per user (across
-running jobs)? -->
+!!! review "Needs Review"
+    Is the `bigmem` memory limit per job or per user (across running jobs)?
 
 Each person can use up to {{ facts.qos.bigmem.mem }} of memory on `bigmem`,
 across up to {{ facts.qos.bigmem.running_jobs }} running jobs. There are only

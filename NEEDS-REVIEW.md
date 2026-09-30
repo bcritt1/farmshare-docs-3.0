@@ -1,10 +1,11 @@
 # Claims That Need Review
 
 These claims on the site need confirming with the FarmShare admins or SRC staff
-before the site replaces the current docs. Each one is also marked in its page
-with an HTML comment, `<!-- NEEDS REVIEW: ... -->`, right before it. The
-comments don't show on the site. When a claim is confirmed or corrected, update
-the page, remove its comment, and remove its row here.
+before the site replaces the current docs. Each one is marked on its page with
+a purple **Needs Review** box, right before the claim, so reviewers can see it
+on the live draft. When a claim is confirmed or corrected, update the page,
+remove its box, and remove its row here. None of these boxes may remain when
+the site goes live.
 
 | Page | Claim | Question |
 |---|---|---|

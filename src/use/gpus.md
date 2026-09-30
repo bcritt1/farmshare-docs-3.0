@@ -58,8 +58,9 @@ Each person can use up to {{ facts.qos.gpu.gpus }} GPUs at a time, across up to
 {{ facts.gpu_nodes * facts.gpus_per_node }} GPUs on FarmShare, shared by
 everyone, so this limit keeps a few large jobs from filling them all.
 
-<!-- NEEDS REVIEW: Can a GPU job run for up to 7 days on the normal partition
-with the long QoS and one GPU, and which GPU limit applies to it? -->
+!!! review "Needs Review"
+    Can a GPU job run for up to 7 days on the normal partition with the long QoS
+    and one GPU, and which GPU limit applies to it?
 
 GPU jobs on the `gpu` partition have the same time limits as other jobs:
 {{ facts.default_runtime }} by default and up to {{ facts.max_runtime }}. The

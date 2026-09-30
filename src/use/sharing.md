@@ -16,8 +16,9 @@ subject, and say who the group is, what the directory is for, and the SUNet IDs
 of the people who need access. Say whether you need home space, scratch space,
 or both.
 
-<!-- NEEDS REVIEW: Is scratch space backed up at all? The admin draft only says
-home directories are backed up for a short time. -->
+!!! review "Needs Review"
+    Is scratch space backed up at all? The admin draft only says home
+    directories are backed up for a short time.
 
 Only home directories are backed up, so keep copies of anything important from
 scratch somewhere else, such as [Oak](../resources/oak.md).

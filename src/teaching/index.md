@@ -35,8 +35,9 @@ themselves. See [Set Up a Course](set-up-a-course.md).
 
 ## When to Ask
 
-<!-- NEEDS REVIEW: Is there a typical lead time for a course setup, software or
-a reservation that we can give instructors? -->
+!!! review "Needs Review"
+    Is there a typical lead time for a course setup, software or a reservation
+    that we can give instructors?
 
 Ask as early as you can, before the quarter starts. A course directory is quick
 to set up. Software, shared containers and reservations take longer, because we
@@ -57,8 +58,8 @@ busiest time for support.
 
 ## Where to Get Help
 
-<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
-handled? -->
+!!! review "Needs Review"
+    Does adding "urgent" to the subject change how a request is handled?
 
 Email {{ facts.support_email }} with "FarmShare" in the subject. We answer
 during business hours. If something breaks close to a class, add "urgent" to the

@@ -3,8 +3,9 @@ tags:
     - software
 ---
 
-<!-- NEEDS REVIEW: Is Ansys on FarmShare licensed for teaching only, or also for
-unsponsored research? Confirm with UIT Software Licensing. -->
+!!! review "Needs Review"
+    Is Ansys on FarmShare licensed for teaching only, or also for unsponsored
+    research? Confirm with UIT Software Licensing.
 
 Ansys is licensed on FarmShare for coursework. If you want to use it for
 research, [ask us](../../fix/get-help.md) first. The `ansys` module includes the

@@ -19,8 +19,8 @@ University IT [Slack page](https://uit.stanford.edu/service/slack).
 
 ## Email Support
 
-<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
-handled? -->
+!!! review "Needs Review"
+    Does adding "urgent" to the subject change how a request is handled?
 
 Email {{ facts.support_email }} with "FarmShare" in the subject line. We answer
 during business hours, so requests sent on a weekend are picked up on the next

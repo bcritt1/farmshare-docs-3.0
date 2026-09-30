@@ -28,6 +28,15 @@ Deployment works the same way as on the Sherlock docs.
    on the repo. If Pages is disabled for the org, an org owner has to allow it.
 3. Every push to `main` that changes the site then redeploys it.
 
+## Before Going Live
+
+The draft has open questions for the FarmShare admins, shown on pages as purple
+**Needs Review** boxes and listed in [NEEDS-REVIEW.md](NEEDS-REVIEW.md). Before
+this site replaces the current docs:
+
+1. Resolve every item, so that `git grep -n '!!! review' src` prints nothing.
+2. Remove the "Draft site" box from `src/index.md`.
+
 ## Writing Docs
 
 Read the [style guide](STYLE-GUIDE.md) and the [contributing

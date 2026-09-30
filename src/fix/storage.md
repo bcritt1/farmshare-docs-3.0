@@ -63,8 +63,9 @@ and groups can ask for shared directories by emailing {{ facts.support_email }}.
 
 ## My Files in Scratch Are Gone
 
-<!-- NEEDS REVIEW: Is scratch space backed up at all? The admin draft only says
-home directories are backed up for a short time. -->
+!!! review "Needs Review"
+    Is scratch space backed up at all? The admin draft only says home
+    directories are backed up for a short time.
 
 Files in scratch that haven't been modified in {{ facts.purge_days }} days are
 deleted automatically. Only home directories are backed up, so we can't restore
@@ -84,8 +85,9 @@ now `{{ facts.scratch_path }}`. See [What's Changed](../about/whats-changed.md).
 This is different from the {{ facts.purge_days }}-day clean-up. The files
 weren't purged; they weren't moved to the new storage.
 
-<!-- NEEDS REVIEW: Can scratch data from before the December 2025 upgrade still
-be copied over, and for how long? -->
+!!! review "Needs Review"
+    Can scratch data from before the December 2025 upgrade still be copied over,
+    and for how long?
 
 Email {{ facts.support_email }} to ask whether your old data can be copied over.
 
