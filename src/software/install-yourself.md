@@ -5,8 +5,7 @@ tags:
 
 You can install your own software on FarmShare, in your home directory or in a
 class or group directory. You can't install system packages with `sudo` or
-`apt`, since FarmShare is shared by everyone and only admins change the system.
-If you need a system package, [ask us](request.md).
+`apt`. If you need one, [ask us](request.md).
 
 ## Use a Package Manager
 

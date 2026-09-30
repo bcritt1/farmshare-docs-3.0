@@ -17,16 +17,17 @@ everyone else's and from your other projects. uv creates them quickly and stores
 packages efficiently, which helps with the {{ facts.home_quota }} home quota.
 
 ```bash
-uv venv myproject
-source myproject/bin/activate
+uv venv ~/myproject
+source ~/myproject/bin/activate
 uv pip install numpy
 ```
 
-`source myproject/bin/activate` switches your shell to that environment, and
+This creates the environment in your home directory, at `~/myproject`.
+`source ~/myproject/bin/activate` switches your shell to that environment, and
 your prompt starts with `(myproject)`. Run `deactivate` to leave it.
 
 uv can also create environments with a specific Python version, for example
-`uv venv --python 3.12 myproject`.
+`uv venv --python 3.12 ~/myproject`.
 
 If the `uv` command isn't found, install it in your home directory with the
 [standalone installer](https://docs.astral.sh/uv/getting-started/installation/).
@@ -38,8 +39,8 @@ Python's own `venv` and `pip` also work:
 
 ```bash
 module load python
-python3 -m venv myproject
-source myproject/bin/activate
+python3 -m venv ~/myproject
+source ~/myproject/bin/activate
 pip install numpy
 ```
 
@@ -56,13 +57,17 @@ source ~/myproject/bin/activate
 python3 analysis.py
 ```
 
+If you created the environment with `module load python` loaded, as in the
+standard-tools example above, add `module load python` to the script too, before
+the `source` line.
+
 ## Use an Environment in JupyterLab
 
 To use an environment's packages in the JupyterLab app in
 [OnDemand]({{ facts.ondemand_url }}), install it as a Jupyter kernel:
 
 ```bash
-source myproject/bin/activate
+source ~/myproject/bin/activate
 uv pip install ipykernel
 python3 -m ipykernel install --user --name myproject
 ```

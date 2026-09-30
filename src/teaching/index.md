@@ -28,11 +28,15 @@ Canvas course. See [Teaching Materials](materials.md).
 
 ## Who Asks
 
-Requests for a course have to come from the instructor of record. Your TAs can
-help with the details, and once the course is set up they can manage the student
-list themselves. See [Set Up a Course](set-up-a-course.md).
+Requests for a course usually come from the instructor of record. If a TA asks,
+we'll check with the instructor and make them the owner. Your TAs can help with
+the details, and once the course is set up they can manage the student list
+themselves. See [Set Up a Course](set-up-a-course.md).
 
 ## When to Ask
+
+<!-- NEEDS REVIEW: Is there a typical lead time for a course setup, software or
+a reservation that we can give instructors? -->
 
 Ask as early as you can, before the quarter starts. A course directory is quick
 to set up. Software, shared containers and reservations take longer, because we
@@ -52,6 +56,9 @@ busiest time for support.
    Day](class-day.md) with your students.
 
 ## Where to Get Help
+
+<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
+handled? -->
 
 Email {{ facts.support_email }} with "FarmShare" in the subject. We answer
 during business hours. If something breaks close to a class, add "urgent" to the

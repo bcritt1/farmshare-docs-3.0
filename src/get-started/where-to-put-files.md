@@ -20,9 +20,9 @@ Your home directory is for files you want to keep: code, scripts, configuration
 files, small data sets, and results. It's backed up for a short time, so files
 you delete by mistake can sometimes be recovered.
 
-We give everyone {{ facts.home_quota }} of home space. FarmShare's storage is
-shared and free, and keeping home the same size for everyone is how we keep it
-fair, so we can't raise it for individual people.
+Your home directory holds {{ facts.home_quota }}, the same for everyone. For
+larger working data, use scratch. For data you need to keep long term, use
+[Oak](../resources/oak.md) if your group has space there.
 
 Keep an eye on how full it is. When your home directory fills up, OnDemand
 sessions can't start and jobs can fail. See [Check and Free Up
@@ -35,8 +35,9 @@ too big for your home directory. It has no size limit.
 
 We clear out files in scratch that haven't been changed in
 {{ facts.purge_days }} days, so it isn't a place to keep anything long term.
-Copy results you need to your home directory or off FarmShare, and delete old
-files when you're done with them. Don't try to work around the clean-up.
+Copy results you need to your home directory or to [Oak](../resources/oak.md),
+and delete old files when you're done with them. Don't try to work around the
+clean-up.
 
 ## Local Temporary Space
 

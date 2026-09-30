@@ -16,10 +16,13 @@ how long files stay.
 | Local temporary | `/tmp` | Node's local disk | No | When the job ends | Each node, separately |
 | AFS | `~/afs-home`, `/afs` | Managed by University IT | Managed by University IT | Never | Login nodes only |
 
+<!-- NEEDS REVIEW: Is scratch space backed up at all? The admin draft only says
+home directories are backed up for a short time. -->
+
 Home is for things you want to keep: code, scripts, configuration files, small
 data sets and results. Scratch is for working data that doesn't fit in home.
-Copy anything you need to keep out of scratch before it's cleared. Scratch isn't
-backed up.
+Copy anything you need to keep out of scratch before it's cleared, to home or to
+[Oak](../resources/oak.md). Only home directories are backed up.
 
 `$SCRATCH` isn't set on FarmShare. Use the full path,
 `{{ facts.scratch_path }}`.
@@ -31,7 +34,8 @@ not your share of it, so check your usage with `du`:
 du -sh ~
 ```
 
-`du` shows the home limit as `{{ facts.home_quota_du }}`.
+`du` reports sizes in GiB, so a full home directory shows as about
+`{{ facts.home_quota_du }}`.
 
 On compute nodes, `/tmp` belongs to the running job and is deleted when the job
 ends. On login nodes, it's cleared often.

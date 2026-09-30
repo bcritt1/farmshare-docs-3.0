@@ -30,8 +30,9 @@ For general advice on installing software without administrator rights, see
 
 We don't block the Anthropic, OpenAI or other AI service APIs on FarmShare, so
 agents that connect to them can run here. That isn't a promise that a particular
-tool will work, and we can't support the tools themselves. You need your own
-account or API key with the service, and you're responsible for its costs.
+tool will work, and we can't promise to fix problems with the tools themselves.
+You need your own account or API key with the service, and you're responsible
+for its costs.
 
 Agents, their caches and the files they create are stored in your home directory
 and count toward your {{ facts.home_quota }} home quota. Some keep large logs or

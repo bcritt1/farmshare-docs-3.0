@@ -12,8 +12,7 @@ it isn't mounted on FarmShare.
 
 FarmShare has no long-term storage beyond your home directory, and scratch files
 are deleted after {{ facts.purge_days }} days without changes. Oak is for
-research data that a group needs to keep and share over the long term, and it's
-mounted on Sherlock.
+research data that a group needs to keep and share over the long term.
 
 Because Oak isn't mounted on FarmShare, you can't use files on Oak directly in a
 FarmShare job. Copy the data you need into your scratch directory,

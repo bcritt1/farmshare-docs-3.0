@@ -75,9 +75,9 @@ Check how much space you're using:
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space, which `du` shows as
-`{{ facts.home_quota_du }}`. Caches from pip, uv, conda and similar tools are
-safe to delete:
+We give everyone {{ facts.home_quota }} of home space. `du` reports sizes in
+GiB, so a full home directory shows as about `{{ facts.home_quota_du }}`. Caches
+from pip, uv, conda and similar tools are safe to delete:
 
 ```sh
 rm -rf ~/.cache/*

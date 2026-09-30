@@ -8,7 +8,8 @@ sections below say where to go and what to include in a request.
 
 ## Slack
 
-FarmShare has two channels in Stanford's Slack:
+FarmShare has two channels on Stanford's Slack. For how to sign in, see the
+University IT [Slack page](https://uit.stanford.edu/service/slack).
 
 - [`{{ facts.announce_channel }}`]({{ facts.announce_url }}) is a low-volume
   channel for outages, maintenance and other announcements. Check it first if
@@ -17,6 +18,9 @@ FarmShare has two channels in Stanford's Slack:
   help each other.
 
 ## Email Support
+
+<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
+handled? -->
 
 Email {{ facts.support_email }} with "FarmShare" in the subject line. We answer
 during business hours, so requests sent on a weekend are picked up on the next

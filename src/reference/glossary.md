@@ -94,8 +94,8 @@ how
 
 Scratch directory :   Your directory for large working data, at
 `{{ facts.scratch_path }}`. It has
-    no size limit and isn't backed up, and files there are purged after
-    {{ facts.purge_days }} days without changes.
+    no size limit, and files there are purged after {{ facts.purge_days }} days
+    without changes.
 
 Slurm :   The scheduler FarmShare uses to decide when and where jobs run.
 Commands

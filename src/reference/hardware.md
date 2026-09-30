@@ -6,6 +6,9 @@ tags:
 FarmShare is made up of several kinds of machines, each with its own job. All of
 them run {{ facts.os }}.
 
+<!-- NEEDS REVIEW: Is the bigmem memory limit per job or per user (across
+running jobs)? -->
+
 | Nodes | What they're for |
 |---|---|
 | `rice` | Login nodes. You connect to these with SSH to edit files, run commands and submit jobs. You can do substantial work on them, within per-user limits. |

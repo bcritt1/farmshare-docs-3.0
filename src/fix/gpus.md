@@ -27,10 +27,10 @@ Check how much space you're using:
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space, which `du` shows as
-`{{ facts.home_quota_du }}`. Machine learning packages and downloaded models
-take up a lot of it. Caches from pip, conda and similar tools are safe to
-delete:
+We give everyone {{ facts.home_quota }} of home space. `du` reports sizes in
+GiB, so a full home directory shows as about `{{ facts.home_quota_du }}`.
+Machine learning packages and downloaded models take up a lot of it. Caches from
+pip, conda and similar tools are safe to delete:
 
 ```sh
 rm -rf ~/.cache/*
@@ -66,6 +66,9 @@ libraries, so install a GPU build of the package in a [virtual
 environment](../software/python.md). If you need the CUDA toolkit to compile
 code, load it with `module load {{ facts.cuda_module }}`.
 
+<!-- NEEDS REVIEW: How do you request a GPU in the OnDemand JupyterLab and
+desktop forms? -->
+
 The same applies to JupyterLab and desktops in OnDemand: the session only has a
 GPU if you asked for one when you launched it.
 
@@ -95,9 +98,12 @@ nodes before they can run jobs again.
 
 ## My GPU Job Needs More Than {{ facts.max_runtime }}
 
-The `gpu` partition doesn't allow the `long` option. To run a GPU job for up to
+<!-- NEEDS REVIEW: Can a GPU job run for up to 7 days on the normal partition
+with the long QoS and one GPU, and which GPU limit applies to it? -->
+
+The `gpu` partition doesn't allow the `long` QoS. To run a GPU job for up to
 {{ facts.long_max_runtime }}, submit it to the `normal` partition with the
-`long` option and ask for a GPU there:
+`long` QoS and ask for one GPU:
 
 ```bash
 #SBATCH --partition=normal
@@ -105,9 +111,11 @@ The `gpu` partition doesn't allow the `long` option. To run a GPU job for up to
 #SBATCH --gpus=1
 ```
 
-See [Run Long or Big-Memory Jobs](../use/long-and-bigmem-jobs.md). If your
-program can save checkpoints as it runs, a job that stops early can restart from
-the last one instead of from the beginning.
+The `normal` QoS allows {{ facts.qos.normal.gpus }} GPU per person. See
+[Limits](../reference/limits.md) and [Run Long or Big-Memory
+Jobs](../use/long-and-bigmem-jobs.md). If your program can save checkpoints as
+it runs, a job that stops early can restart from the last one instead of from
+the beginning.
 
 ## Getting Help
 

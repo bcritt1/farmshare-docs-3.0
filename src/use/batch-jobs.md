@@ -13,6 +13,13 @@ FarmShare uses the [Slurm](https://slurm.schedmd.com/) scheduler. If you haven't
 submitted a job before, [Run Your First Job](../get-started/first-job.md) walks
 through it step by step.
 
+!!! note "Set a time limit"
+    If you don't set a time limit, a job on `normal` gets
+    {{ facts.default_runtime }} and is stopped when that runs out. For anything
+    longer, set `--time`. You can ask for up to {{ facts.max_runtime }}, or
+    {{ facts.long_max_runtime }} with the `long` QoS. See [Run Long or
+    Big-Memory Jobs](long-and-bigmem-jobs.md).
+
 ## Write a Batch Script
 
 A batch script is a shell script with `#SBATCH` lines at the top. Those lines
@@ -45,6 +52,9 @@ python3 sum.py
    end of this time are stopped.
 6. Loads the software the job needs. See [Find Installed
    Software](../software/modules.md).
+
+If your script uses packages from a virtual environment, see [Use an Environment
+in a Batch Job](../software/python.md#use-an-environment-in-a-batch-job).
 
 Slurm reads `#SBATCH` lines only at the top of the script. Any `#SBATCH` line
 that comes after the first command is ignored.
@@ -89,11 +99,6 @@ cat slurm-300992.out
 ```
 
 ## Things to Know
-
-If you don't set a time limit, a job on `normal` gets
-{{ facts.default_runtime }}. You can ask for up to {{ facts.max_runtime }}, or
-{{ facts.long_max_runtime }} with the `long` QoS. See [Run Long or Big-Memory
-Jobs](long-and-bigmem-jobs.md).
 
 Ask for what the job needs and not much more. Larger requests wait longer to
 start, because the scheduler has to find room for them. Jobs that go over their

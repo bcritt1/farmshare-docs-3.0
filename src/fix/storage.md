@@ -20,9 +20,9 @@ ssh SUNetID@{{ facts.login_host }}
 du -sh ~
 ```
 
-The limit is {{ facts.home_quota }}, which `du` shows as
-`{{ facts.home_quota_du }}`. To see which directories are taking the most space,
-including hidden ones:
+The limit is {{ facts.home_quota }}. `du` reports sizes in GiB, so a full home
+directory shows as about `{{ facts.home_quota_du }}`. To see which directories
+are taking the most space, including hidden ones:
 
 ```sh
 du -h --max-depth=1 ~ | sort -h
@@ -53,27 +53,41 @@ a quota command.
 
 ## I Need More Space in My Home Directory
 
-We give everyone {{ facts.home_quota }} of home space and can't raise it for
-individual people. FarmShare's storage is shared and free, and keeping home the
-same size for everyone is how we keep it fair.
+Everyone gets {{ facts.home_quota }} of home space, the amount we can offer for
+free on a shared system, so we can't raise it for individual people.
 
 For bigger data, use your scratch directory. It has no size limit, but files you
-haven't modified in {{ facts.purge_days }} days are deleted, so copy anything
-you need to keep somewhere else. Classes and groups can ask for shared
-directories by emailing {{ facts.support_email }}.
+haven't modified in {{ facts.purge_days }} days are deleted. For data you need
+to keep, use [Oak](../resources/oak.md) if your group has space there. Classes
+and groups can ask for shared directories by emailing {{ facts.support_email }}.
 
 ## My Files in Scratch Are Gone
 
+<!-- NEEDS REVIEW: Is scratch space backed up at all? The admin draft only says
+home directories are backed up for a short time. -->
+
 Files in scratch that haven't been modified in {{ facts.purge_days }} days are
-deleted automatically, and scratch isn't backed up, so we can't restore them.
-Keep anything you need long term in your home directory or off FarmShare.
+deleted automatically. Only home directories are backed up, so we can't restore
+purged scratch files. Keep anything you need long term in your home directory or
+on [Oak](../resources/oak.md).
 
-## I Can't Find My Old Scratch Data After the December 2025 Upgrade
+If your scratch files are gone along with the path they were in, such as
+`/farmshare/user_data/$USER`, they weren't purged. See the next problem.
 
-Scratch data from before the December 2025 upgrade wasn't copied to the new
-storage automatically, and the old path, `/farmshare/user_data/$USER`, no longer
-exists. Email {{ facts.support_email }} to ask whether your old data can be
-copied over.
+## My Old Scratch Path Doesn't Exist
+
+FarmShare moved to new storage in December 2025, and scratch data from before
+then wasn't copied to the new storage automatically. The old path,
+`/farmshare/user_data/$USER`, no longer exists, and your scratch directory is
+now `{{ facts.scratch_path }}`. See [What's Changed](../about/whats-changed.md).
+
+This is different from the {{ facts.purge_days }}-day clean-up. The files
+weren't purged; they weren't moved to the new storage.
+
+<!-- NEEDS REVIEW: Can scratch data from before the December 2025 upgrade still
+be copied over, and for how long? -->
+
+Email {{ facts.support_email }} to ask whether your old data can be copied over.
 
 ## I Deleted Something From My Home Directory by Mistake
 

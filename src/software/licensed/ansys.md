@@ -3,9 +3,12 @@ tags:
     - software
 ---
 
-Ansys is licensed on FarmShare for coursework and unsponsored research. The
-`ansys` module includes the Ansys Electronics Desktop, which contains HFSS. Run
-it in a FarmShare Desktop.
+<!-- NEEDS REVIEW: Is Ansys on FarmShare licensed for teaching only, or also for
+unsponsored research? Confirm with UIT Software Licensing. -->
+
+Ansys is licensed on FarmShare for coursework. If you want to use it for
+research, [ask us](../../fix/get-help.md) first. The `ansys` module includes the
+Ansys Electronics Desktop, which contains HFSS. Run it in a FarmShare Desktop.
 
 ## Start the Electronics Desktop
 

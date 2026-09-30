@@ -35,10 +35,10 @@ Check how much space you're using:
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space, which `du` shows as
-`{{ facts.home_quota_du }}`. If you're at or near that, clear some space. Caches
-from pip, conda and similar tools often take the most, and they're safe to
-delete:
+We give everyone {{ facts.home_quota }} of home space. `du` reports sizes in
+GiB, so a full home directory shows as about `{{ facts.home_quota_du }}`. If
+you're at or near that, clear some space. Caches from pip, conda and similar
+tools often take the most, and they're safe to delete:
 
 ```sh
 rm -rf ~/.cache/*
@@ -78,10 +78,9 @@ Your running jobs, counted as CPUs times their remaining time limit, have
 reached the most you can hold at once. The waiting job starts when some of your
 running jobs finish. Asking for less `--time` or fewer CPUs also helps.
 
-We don't raise limits for individual people, because the same limits for
-everyone are what keep FarmShare fair to share. If your work regularly needs
-more than FarmShare allows, or it's sponsored research, it belongs on
-[Sherlock](../resources/sherlock.md).
+The limits are listed on [Limits](../reference/limits.md). If your work
+regularly needs more than FarmShare allows, or it's sponsored research, it
+belongs on [Sherlock](../resources/sherlock.md).
 
 ## My Interactive Session Takes a Long Time to Start
 

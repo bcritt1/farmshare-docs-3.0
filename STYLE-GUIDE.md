@@ -44,13 +44,16 @@ alternative. A bare rule reads as cold and dictatorial:
 
 Say it the way a person would explain it:
 
-> We give everyone 50 GB of home space. We'd like to offer more, but
-> FarmShare's storage is shared and free, and keeping home the same size for
-> everyone is how we keep it fair. So we can't raise it for individual people.
+> Everyone gets 50 GB of home space. FarmShare is a shared system, and that's
+> the amount we can offer for free while keeping it working well for everyone,
+> so we can't raise it for individual people.
 >
-> For bigger data, use your scratch directory. It has no size limit. We clear
-> out files there that haven't changed in 90 days, so keep copies of anything
-> important somewhere else.
+> For bigger data, use your scratch directory. It has no size limit, but files
+> you haven't changed in 90 days are cleared out. For data you need to keep,
+> use Oak.
+
+Give the reason once, where the reader asked. Don't apologize ("we'd like to
+offer more"), and don't repeat the reason on every page that mentions the limit.
 
 ## How Pages Start
 

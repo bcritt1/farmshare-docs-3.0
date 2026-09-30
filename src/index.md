@@ -11,7 +11,8 @@ hide:
     [docs.farmshare.stanford.edu](https://docs.farmshare.stanford.edu).
 
 FarmShare is Stanford's computing cluster for coursework and unsponsored
-research. Anyone with a full-service SUNet ID can use it, and it's free.
+research. Anyone with a full-service SUNet ID, one that includes Stanford email,
+can use it for free.
 
 If FarmShare seems to be down, check
 [`{{ facts.announce_channel }}`]({{ facts.announce_url }}) on Slack for outages
@@ -42,3 +43,11 @@ and maintenance.
     differently here.
 
 </div>
+
+## Common Tasks
+
+- [Use GPUs](use/gpus.md)
+- [Use Caddyshack for EE Courses](use/caddyshack.md)
+- [Where to Put Your Files](get-started/where-to-put-files.md)
+- [Submit a Batch Job](use/batch-jobs.md)
+- [Fix a Problem](fix/index.md)

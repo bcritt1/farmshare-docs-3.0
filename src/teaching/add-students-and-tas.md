@@ -52,11 +52,10 @@ active for as long as their SUNet ID does.
 
 ## Drop-Box Folders
 
-We don't create a separate directory for each student. If you want students to
-hand in work through the course directory, email {{ facts.support_email }} and
-describe what you need, for example a folder per student that only that student
-and course staff can read. We'll set up the permissions with you and help you
-test them before students start using them.
+If you want students to hand in work through the course directory, email
+{{ facts.support_email }} and describe what you need, for example a folder per
+student that only that student and course staff can read. We'll set up the
+permissions with you and help you test them before students start using them.
 
 ## If Something Goes Wrong
 

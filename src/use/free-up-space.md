@@ -15,8 +15,9 @@ Run this on a login node:
 du -sh ~
 ```
 
-`du` reports the limit as `{{ facts.home_quota_du }}`, so if the number is at or
-near that, your home directory is full.
+`du` reports sizes in GiB, so a full home directory shows as about
+`{{ facts.home_quota_du }}`. If the number is at or near that, your home
+directory is full.
 
 Don't use `df` for this. Your home directory is on storage shared with everyone
 else, and `df` shows the free space on that whole system, not your own usage.
@@ -55,7 +56,8 @@ into your home directory.
 Your scratch directory, `{{ facts.scratch_path }}`, has no size limit, so it's
 the place for large data sets and working files. Files there that haven't
 changed in {{ facts.purge_days }} days are cleared out, so keep copies of
-anything important in your home directory or off FarmShare.
+anything important in your home directory or on [Oak](../resources/oak.md), if
+your group has space there.
 
 ```sh
 mv ~/big-dataset {{ facts.scratch_path }}/

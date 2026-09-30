@@ -79,8 +79,8 @@ extra:
       link: https://srcc.stanford.edu
       name: Stanford Research Computing
     - icon: fontawesome/brands/slack
-      link: https://srcc.slack.com/
-      name: SRCC Users Slack workspace
+      link: https://stanford.enterprise.slack.com/archives/C018638T170
+      name: "#farmshare-users on Stanford Slack"
 
 plugins:
   - search
@@ -122,12 +122,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Get Started:
+      - Get Started: get-started/index.md
       - "Is FarmShare Right for Me?": get-started/is-farmshare-right.md
       - Log In for the First Time: get-started/first-login.md
       - Run Your First Job: get-started/first-job.md
       - Where to Put Your Files: get-started/where-to-put-files.md
       - Coming from Sherlock: get-started/coming-from-sherlock.md
   - Use FarmShare:
+      - Use FarmShare: use/index.md
       - Work in Your Browser:
           - Start a Desktop: use/start-a-desktop.md
           - Use JupyterLab: use/jupyterlab.md
@@ -154,6 +156,7 @@ nav:
           - SSH to a Compute Node: use/ssh-compute-node.md
           - Use the Login Nodes: use/login-nodes.md
   - Software:
+      - Software: software/index.md
       - Find Installed Software: software/modules.md
       - Request Software: software/request.md
       - Python: software/python.md
@@ -181,6 +184,7 @@ nav:
       - Get Ready for Class Day: teaching/class-day.md
       - Teaching Materials: teaching/materials.md
   - Fix a Problem:
+      - Fix a Problem: fix/index.md
       - OnDemand and Desktops: fix/ondemand.md
       - Storage and Files: fix/storage.md
       - Logging In: fix/logging-in.md
@@ -191,6 +195,7 @@ nav:
       - Common Questions: fix/common-questions.md
       - Get Help: fix/get-help.md
   - Reference:
+      - Reference: reference/index.md
       - Limits: reference/limits.md
       - Storage Locations and Quotas: reference/storage.md
       - Hardware: reference/hardware.md
@@ -198,6 +203,7 @@ nav:
       - Policies: reference/policies.md
       - Glossary: reference/glossary.md
   - Additional Resources:
+      - Additional Resources: resources/index.md
       - Other Stanford Research Computing Services:
           - Sherlock: resources/sherlock.md
           - Oak: resources/oak.md
@@ -208,5 +214,6 @@ nav:
           - NSF ACCESS: resources/nsf-access.md
           - Google Cloud: resources/google-cloud.md
   - About:
+      - About: about/index.md
       - "What's Changed": about/whats-changed.md
       - Supporting FarmShare: about/supporting-farmshare.md

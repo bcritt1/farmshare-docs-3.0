@@ -9,10 +9,10 @@ data, install software and submit jobs.
 
 ## What You Can Do on a Login Node
 
-FarmShare allows more on its login nodes than many clusters do. You can do
-substantial work on them, such as compiling software, testing scripts, and
-running short analyses. Each person's use of a login node is limited, though,
-and work that needs more than those limits should run as a job.
+You can do substantial work on the login nodes, such as compiling software,
+testing scripts, and running short analyses. Each person's use of a login node
+is limited, though, and work that needs more than those limits should run as a
+job.
 
 When your work needs more than a login node allows, a GPU, or all of a node's
 resources to itself, run it as a job on a compute node instead. See [Submit a

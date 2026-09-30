@@ -28,7 +28,8 @@ A few days before class, have students check their usage on a login node:
 du -sh ~
 ```
 
-If it's close to `{{ facts.home_quota_du }}`, [Check and Free Up
+`du` reports sizes in GiB, so a full home directory shows as about
+`{{ facts.home_quota_du }}`. If it's close to that, [Check and Free Up
 Space](../use/free-up-space.md) shows how to clear it. For course data sets, use
 the course directory or class scratch space rather than copies in each student's
 home directory.
@@ -79,6 +80,9 @@ whole class, belongs in a desktop or an [interactive
 session](../use/interactive-sessions.md) on a compute node.
 
 ## You Know How to Reach Us
+
+<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
+handled? -->
 
 Email {{ facts.support_email }} with "FarmShare" and "urgent" in the subject if
 something breaks close to class. We answer during business hours, so a problem

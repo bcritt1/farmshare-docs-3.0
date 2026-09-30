@@ -30,16 +30,11 @@ When you're finished, select **Delete** on the session in
 
 We don't support connecting the VS Code app on your own computer to FarmShare
 with the Remote-SSH extension, or editors built on it such as Cursor. It isn't
-blocked at the moment, but that may change, and we can't troubleshoot it for
-you.
+blocked at the moment, but that may change, and we can't promise to fix problems
+with it.
 
-Remote-SSH copies its own server program into your home directory and runs it on
-a login node, and each connection it opens has to get through Duo. When
-something in that chain fails, such as a Duo prompt the extension doesn't show
-you or a full home directory, the connection tends to hang rather than give a
-clear error. The OnDemand app doesn't depend on any of that, and your code runs
-on a compute node with the resources you asked for rather than on a shared login
-node.
+Remote-SSH needs its own Duo approvals and fails when your home directory is
+full, so it often hangs without a clear error. The OnDemand app avoids both.
 
 ## Things to Know
 

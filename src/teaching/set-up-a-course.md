@@ -37,10 +37,9 @@ read, ask for a class scratch directory at the same time.
 
 ## Ask for a Course Setup
 
-The request has to come from the instructor of record for the course. We check
-the instructor against ExploreCourses, so we can't act on a request that only
-comes from a TA. If your TA is handling the details, send the request yourself
-and copy them.
+Requests usually come from the instructor of record for the course. If a TA
+asks, we'll check with the instructor and make them the owner. If your TA is
+handling the details, you can send the request yourself and copy them.
 
 Email {{ facts.support_email }} with "FarmShare course setup" in the subject,
 and include:
@@ -65,12 +64,15 @@ The first login finishes creating their account, and until then OnDemand and job
 submission won't work for them. Send them [Log in for the first
 time](../get-started/first-login.md).
 
-We don't create a separate directory for each student. Students keep their own
-work in their home or scratch directories. If you want students to hand in work
-through the course directory, ask us for drop-box folders, and we'll set up
-permissions for them. See [Add students and TAs](add-students-and-tas.md).
+Students keep their own work in their home or scratch directories. If you want
+students to hand in work through the course directory, ask us for drop-box
+folders, and we'll set up permissions for them. See [Add students and
+TAs](add-students-and-tas.md).
 
 ## If Something Goes Wrong Before Class
+
+<!-- NEEDS REVIEW: Does adding "urgent" to the subject change how a request is
+handled? -->
 
 If something breaks close to a class or a deadline, email
 {{ facts.support_email }} with "FarmShare" and "urgent" in the subject. Our

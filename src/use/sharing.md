@@ -5,9 +5,8 @@ tags:
 ---
 
 To share files with other people on FarmShare, put them in a directory those
-people can reach and set the file permissions to let them in. FarmShare doesn't
-create shared group space automatically, but classes and groups can ask us for a
-shared directory.
+people can reach and set the file permissions to let them in. Classes and groups
+can ask us for a shared directory.
 
 ## Ask for a Group Directory
 
@@ -15,8 +14,13 @@ We set up shared directories for groups on request, in `/home/groups` and
 `/scratch/groups`. Email {{ facts.support_email }} with "FarmShare" in the
 subject, and say who the group is, what the directory is for, and the SUNet IDs
 of the people who need access. Say whether you need home space, scratch space,
-or both. Scratch space isn't backed up, so keep copies of anything important
-somewhere else.
+or both.
+
+<!-- NEEDS REVIEW: Is scratch space backed up at all? The admin draft only says
+home directories are backed up for a short time. -->
+
+Only home directories are backed up, so keep copies of anything important from
+scratch somewhere else, such as [Oak](../resources/oak.md).
 
 For a course, the instructor asks for a course directory instead. See [Set Up a
 Course](../teaching/set-up-a-course.md).

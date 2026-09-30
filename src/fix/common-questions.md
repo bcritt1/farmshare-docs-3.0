@@ -4,27 +4,29 @@ tags:
     - policy
 ---
 
-Some of FarmShare's rules come up in support requests again and again. Here are
-the reasons behind the most common ones, and what you can do instead.
+These questions come up often in support requests. Each answer says what you can
+do instead.
 
 ## Why Can't I Get More Home Space?
 
-We give everyone {{ facts.home_quota }} of home space. We'd like to offer more,
-but FarmShare's storage is shared and free, and keeping home the same size for
-everyone is how we keep it fair. So we can't raise it for individual people.
+Everyone gets {{ facts.home_quota }} of home space. FarmShare is a shared
+system, and that's the amount we can offer for free while keeping it working
+well for everyone, so we can't raise it for individual people. If you need more
+space, use your scratch directory for working data, or
+[Oak](../resources/oak.md) for data you need to keep.
 
-For bigger data, use your scratch directory, `{{ facts.scratch_path }}`. It has
-no size limit. We clear out files there that haven't changed in
-{{ facts.purge_days }} days, so keep copies of anything important somewhere
-else. Classes and groups can ask for shared directories by emailing
-{{ facts.support_email }}. If you've run out of space, [Check and Free Up
-Space](../use/free-up-space.md) shows what's usually taking it up.
+Your scratch directory, `{{ facts.scratch_path }}`, has no size limit. We clear
+out files there that haven't changed in {{ facts.purge_days }} days, so keep
+copies of anything important somewhere else. Classes and groups can ask for
+shared directories by emailing {{ facts.support_email }}. If you've run out of
+space, [Check and Free Up Space](../use/free-up-space.md) shows what's usually
+taking it up.
 
 ## Why Can't I Raise My Job Limits?
 
 Everyone on FarmShare has the same limits on CPUs, memory, GPUs and run time.
-Keeping them the same for everyone is what makes FarmShare fair to share, so we
-don't raise them for individual people.
+FarmShare is a shared system, and these limits keep it working well for
+everyone, so we don't raise them for individual people.
 
 If your work regularly needs more than FarmShare allows, or it's sponsored
 research, it belongs on [Sherlock](../resources/sherlock.md). The current limits
@@ -32,9 +34,8 @@ are on [Limits](../reference/limits.md).
 
 ## Why Can't I Use `sudo`?
 
-FarmShare is shared by everyone, and a change to the system affects every person
-using it. Only administrators install system packages or change the system, so
-nobody's work breaks because of someone else's change.
+Only administrators can change the system on FarmShare, because it's shared by
+everyone.
 
 You can install most software yourself, in your home directory, without
 administrator rights. See [Install Software

@@ -12,13 +12,15 @@ Day-to-day announcements, such as maintenance and outages, are posted in
 FarmShare moved to new hardware and new storage, with major software updates. It
 now runs {{ facts.os }}.
 
+<!-- NEEDS REVIEW: Can scratch data from before the December 2025 upgrade still
+be copied over, and for how long? -->
+
 Scratch data wasn't moved to the new storage automatically. If you had files in
 scratch before the upgrade and can't find them, email {{ facts.support_email }}
-to ask whether they can be copied over. See [I Can't Find My Old Scratch Data
-After the December 2025
-Upgrade](../fix/storage.md#i-cant-find-my-old-scratch-data-after-the-december-2025-upgrade).
-The old scratch path, `/farmshare/user_data/$USER`, no longer exists. Your
-scratch directory is now `{{ facts.scratch_path }}`.
+to ask whether they can be copied over. See [My Old Scratch Path Doesn't
+Exist](../fix/storage.md#my-old-scratch-path-doesnt-exist). The old scratch
+path, `/farmshare/user_data/$USER`, no longer exists. Your scratch directory is
+now `{{ facts.scratch_path }}`.
 
 Installed software and module versions changed. If a module you used before is
 missing or has a different version, run `module spider <name>` to see what's

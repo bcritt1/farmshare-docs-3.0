@@ -36,5 +36,4 @@ kinit && aklog
 ## Edit a Web Site in AFS
 
 For quick tasks like editing files for a web site hosted in AFS, use
-`{{ facts.afs_web_host }}` instead of FarmShare. It's set up for that, and the
-AFS connection on FarmShare's login nodes is there for convenience.
+`{{ facts.afs_web_host }}` instead of FarmShare. It's set up for that.

@@ -19,24 +19,36 @@ files to your home directory every time a session starts, and when there's no
 room, the session can't start.
 
 Check how much space you're using. The Files menu in OnDemand may not work while
-your home directory is full, so connect with SSH instead:
+your home directory is full, so open a terminal another way. In your browser,
+open [FarmShare Shell Access]({{ facts.shell_access_url }}), which is
+**Clusters** > **FarmShare Shell Access** in OnDemand. Or connect with SSH:
 
 ```sh
 ssh SUNetID@{{ facts.login_host }}
+```
+
+Then run:
+
+```sh
 du -sh ~
 ```
 
-We give everyone {{ facts.home_quota }} of home space, which `du` shows as
-`{{ facts.home_quota_du }}`. If you're close to that, see [Check and free up
-space](../use/free-up-space.md) to find what's taking it up. Caches from pip,
-conda and similar tools often take the most space, and they're safe to delete:
+We give everyone {{ facts.home_quota }} of home space. `du` reports sizes in
+GiB, so a full home directory shows as about `{{ facts.home_quota_du }}`. If
+you're close to that, see [Check and free up space](../use/free-up-space.md) to
+find what's taking it up. Caches from pip, conda and similar tools often take
+the most space, and they're safe to delete:
 
 ```sh
 rm -rf ~/.cache/*
 ```
 
-If your home directory isn't full and this is your first time using FarmShare,
-see the next problem.
+### If Your Home Directory Isn't Full
+
+If this is your first time using FarmShare, see the next problem. Otherwise,
+check [`{{ facts.announce_channel }}`]({{ facts.announce_url }}) for an outage
+or maintenance. If nothing's posted, [contact us](get-help.md) with the session
+type and the time it failed.
 
 ## `Invalid account or account/partition combination`
 

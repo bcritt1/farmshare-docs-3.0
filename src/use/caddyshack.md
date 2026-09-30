@@ -37,11 +37,11 @@ HSPICE, expect AFS and a Red Hat environment. For those, connect from the
 desktop to one of the `caddy` machines, which EE IT runs:
 
 1. In the desktop, open a terminal.
-2. Connect to a caddy machine with graphics forwarding turned on. The machines
-   are named `caddy01.stanford.edu` through `caddy18.stanford.edu`:
+2. Connect to a caddy machine with graphics forwarding turned on.
+   `caddy.best.stanford.edu` connects you to the least busy one:
 
     ```bash
-    ssh -XY SUNetID@caddy01.stanford.edu
+    ssh -XY SUNetID@caddy.best.stanford.edu
     ```
 
 3. Start the `tcsh` shell, then follow your course's setup instructions:

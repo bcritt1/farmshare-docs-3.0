@@ -75,8 +75,7 @@ ssh SUNetID@{{ facts.login_host }}
 
 For quick tasks like editing files for a personal or course web site hosted in
 AFS, use `{{ facts.afs_web_host }}` instead of FarmShare. It's set up for that
-kind of work, and the AFS connection on FarmShare's login nodes is there only
-for convenience.
+kind of work.
 
 ## Getting Help
 
