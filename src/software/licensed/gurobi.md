@@ -29,5 +29,4 @@ runs Gurobi. See [Submit a Batch Job](../../use/batch-jobs.md).
 
 Don't use a free academic license tied to your own computer. Those licenses
 check which computer they're running on, and your jobs run on different
-FarmShare nodes each time, so they fail with a host ID error. The FarmShare
-license works on every node.
+FarmShare nodes each time, so they fail with a host ID error.
