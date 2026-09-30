@@ -23,8 +23,9 @@ facts:
     interactive: {cpus: 16, mem: 64G, jobs: 4}
     dev: {max_time: 8 hours, cpus: 8, mem: 32G, jobs: 1}
     long: {max_time: 7 days, cpus: 128, running_jobs: 4, submitted_jobs: 32}
-    bigmem: {mem: 1.5 TB, running_jobs: 4}
+    bigmem: {mem: 1.5 TB, running_jobs: 4, submitted_jobs: 32}
     gpu: {gpus: 4, running_jobs: 4, submitted_jobs: 32}
+    caddyshack: {cpus: 8, mem: 32G, jobs: 1}
     normal: {cpus: 512, gpus: 1, running_jobs: 128, submitted_jobs: 1024}
   gpu_nodes: 6
   gpus_per_node: 4

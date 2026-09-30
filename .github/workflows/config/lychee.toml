@@ -18,6 +18,7 @@ exclude = [
   "ondemand\\.farmshare\\.stanford\\.edu", # login-gated
   "\\.md(#|$)",                # relative .md links (internal, resolved by mkdocs)
   "gnu\\.org",                 # times out from CI datacenter IPs (Azure), reachable locally
+  "chiark\\.greenend\\.org\\.uk", # PuTTY site, times out for automated checkers
   "console\\.mistral\\.ai",    # login-gated console, redirect loop to auth.mistral.ai for non-browser clients
 ]
 
