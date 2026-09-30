@@ -47,7 +47,7 @@ compute node in an [interactive session](../use/interactive-sessions.md) or a
 An agent sends your code and files to an outside service. FarmShare isn't
 approved for high-risk data, and you shouldn't send data to an AI service unless
 Stanford's rules for that data allow it. See
-[Policies](../reference/policies.md).
+[Policy](../reference/policies.md).
 
 ## If Something Goes Wrong
 

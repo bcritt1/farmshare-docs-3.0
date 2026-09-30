@@ -200,7 +200,7 @@ nav:
       - Storage Locations and Quotas: reference/storage.md
       - Hardware: reference/hardware.md
       - Software List: reference/software-list.md
-      - Policies: reference/policies.md
+      - Policy: reference/policies.md
       - Glossary: reference/glossary.md
   - Additional Resources:
       - Additional Resources: resources/index.md

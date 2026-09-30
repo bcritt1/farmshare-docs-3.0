@@ -38,7 +38,7 @@ cluster for it.
 FarmShare is approved for low- and moderate-risk data only. Don't use it to
 store, process or transfer high-risk data, such as protected health information
 or other personally identifiable information. See
-[Policies](../reference/policies.md) for the details.
+[Policy](../reference/policies.md) for the details.
 
 ## Other Options
 

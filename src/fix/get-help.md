@@ -35,7 +35,15 @@ Include enough for us to see what happened without writing back:
 4. The job ID, OnDemand session type or node name, if there is one.
 5. Roughly when it happened.
 
-## Accessibility
+## Report Accessibility Issues
 
-If you run into accessibility barriers on this site, visit [Digital
+<!-- Adopted verbatim from the current FarmShare docs (help page). Keep the
+wording as is. -->
+
+<!-- vale off -->
+
+Stanford is committed to providing an accessible digital environment. If you
+experience accessibility barriers on this site, please visit [Digital
 Accessibility at Stanford](https://www.stanford.edu/site/accessibility).
+
+<!-- vale on -->
