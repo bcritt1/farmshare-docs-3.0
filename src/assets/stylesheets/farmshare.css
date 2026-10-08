@@ -22,10 +22,16 @@
   text-underline-offset: 0.15em;
 }
 
-/* Code comments: the theme's default gray is 4.47:1 on the code background,
-   just under 4.5:1. */
+/* Code comments and variables: the theme's default gray is 4.47:1 on the
+   code background, just under 4.5:1. */
 [data-md-color-scheme="default"] {
-  --md-code-hl-comment-color: #666666;
+  --md-code-hl-comment-color:  #666666;
+  --md-code-hl-variable-color: #666666;
+}
+/* Dark-mode code colors that fall just under 4.5:1 on the code background. */
+[data-md-color-scheme="slate"] {
+  --md-code-hl-constant-color: #9d8eea;
+  --md-code-hl-number-color:   #ec7a6e;
 }
 
 /* "Needs Review" admonitions: open questions for the FarmShare admins.
