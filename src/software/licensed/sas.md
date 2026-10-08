@@ -10,13 +10,13 @@ as batch jobs, or from an interactive session.
 
 ```bash title="sas-job.sh"
 #!/bin/bash
-#SBATCH --job-name=sas         # (1)!
-#SBATCH --cpus-per-task=1      # (2)!
-#SBATCH --mem=8G               # (3)!
-#SBATCH --time=02:00:00        # (4)!
+#SBATCH --job-name=sas         # (1)
+#SBATCH --cpus-per-task=1      # (2)
+#SBATCH --mem=8G               # (3)
+#SBATCH --time=02:00:00        # (4)
 
-module load sas                # (5)!
-sas analysis.sas               # (6)!
+module load sas                # (5)
+sas analysis.sas               # (6)
 ```
 
 1. A name for the job, shown in `squeue`.

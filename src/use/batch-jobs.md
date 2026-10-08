@@ -34,13 +34,13 @@ print(x)
 
 ```bash title="example.sh"
 #!/bin/bash
-#SBATCH --job-name=example    # (1)!
-#SBATCH --partition=normal    # (2)!
-#SBATCH --cpus-per-task=1     # (3)!
-#SBATCH --mem=4G              # (4)!
-#SBATCH --time=00:10:00       # (5)!
+#SBATCH --job-name=example    # (1)
+#SBATCH --partition=normal    # (2)
+#SBATCH --cpus-per-task=1     # (3)
+#SBATCH --mem=4G              # (4)
+#SBATCH --time=00:10:00       # (5)
 
-module load python            # (6)!
+module load python            # (6)
 python3 sum.py
 ```
 

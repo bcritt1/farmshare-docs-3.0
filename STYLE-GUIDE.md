@@ -171,8 +171,10 @@ moved or merged later.
 A **task page** opens with the one-sentence intro and a "Before you start" line
 if there's a prerequisite. Then come the steps, a section of things to know
 (limits and behavior, each with its reason), and a link to the matching
-troubleshooting page. Batch scripts get one annotation per `#SBATCH` line, as on
-the Sherlock docs.
+troubleshooting page. Batch scripts number each `#SBATCH` line with a plain
+comment (`# (1)`) and explain each number in a list right after the script.
+Don't use the theme's code-annotation feature: its markers are links with no
+text, which screen readers can't announce.
 
 ````markdown
 ---

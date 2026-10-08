@@ -10,7 +10,7 @@ you're most likely to run into.
 
 ## What's Different
 
-| | Sherlock | FarmShare |
+| Topic | Sherlock | FarmShare |
 |---|---|---|
 | What it's for | Sponsored and departmental research. Not for coursework. | Coursework and unsponsored research. Not for sponsored research. |
 | Getting an account | A faculty sponsor requests it. Any SUNet ID level works. | Any full-service SUNet ID. Your account is set up the first time you log in. See [Log In for the First Time](first-login.md). |

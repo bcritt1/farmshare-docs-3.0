@@ -23,12 +23,12 @@ use. Many programs, including those built with OpenMP, read the
 ```bash title="threads.sh"
 #!/bin/bash
 #SBATCH --job-name=threads-example
-#SBATCH --ntasks=1               # (1)!
-#SBATCH --cpus-per-task=8        # (2)!
+#SBATCH --ntasks=1               # (1)
+#SBATCH --cpus-per-task=8        # (2)
 #SBATCH --mem=16G
 #SBATCH --time=01:00:00
 
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK   # (3)!
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK   # (3)
 ./my_program
 ```
 
@@ -47,12 +47,12 @@ Load the OpenMPI module, then start the program with `mpirun` inside the job.
 ```bash title="mpi.sh"
 #!/bin/bash
 #SBATCH --job-name=mpi-example
-#SBATCH --ntasks=16              # (1)!
-#SBATCH --cpus-per-task=1        # (2)!
-#SBATCH --mem-per-cpu=2G         # (3)!
+#SBATCH --ntasks=16              # (1)
+#SBATCH --cpus-per-task=1        # (2)
+#SBATCH --mem-per-cpu=2G         # (3)
 #SBATCH --time=01:00:00
 
-module load openmpi              # (4)!
+module load openmpi              # (4)
 mpirun -np $SLURM_NTASKS ./my_mpi_program
 ```
 

@@ -6,6 +6,28 @@
   --md-accent-fg-color:         #B83A4B;
 }
 
+/* Accessibility (WCAG 2.1 AA, which covers Stanford's WCAG 2.0 AA policy).
+   Dark mode: cardinal on the dark background is 1.7:1, so links and
+   highlighted nav items use a light cardinal tint (6.7:1). The header keeps
+   true cardinal, since white on cardinal passes. */
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color:  #F28B82;
+  --md-accent-fg-color:  #F28B82;
+}
+
+/* Links in body text are underlined: their color alone can't be told apart
+   from the surrounding text (WCAG 1.4.1). */
+.md-typeset a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Code comments: the theme's default gray is 4.47:1 on the code background,
+   just under 4.5:1. */
+[data-md-color-scheme="default"] {
+  --md-code-hl-comment-color: #666666;
+}
+
 /* "Needs Review" admonitions: open questions for the FarmShare admins.
    Every one must be resolved and removed before the site goes live. */
 :root {

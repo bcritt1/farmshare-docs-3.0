@@ -25,13 +25,13 @@ Session](../../use/interactive-sessions.md).
 
 ```bash title="stata-job.sh"
 #!/bin/bash
-#SBATCH --job-name=stata       # (1)!
-#SBATCH --cpus-per-task=1      # (2)!
-#SBATCH --mem=8G               # (3)!
-#SBATCH --time=02:00:00        # (4)!
+#SBATCH --job-name=stata       # (1)
+#SBATCH --cpus-per-task=1      # (2)
+#SBATCH --mem=8G               # (3)
+#SBATCH --time=02:00:00        # (4)
 
-module load stata              # (5)!
-stata -b do analysis.do        # (6)!
+module load stata              # (5)
+stata -b do analysis.do        # (6)
 ```
 
 1. A name for the job, shown in `squeue`.

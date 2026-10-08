@@ -25,13 +25,13 @@ This example runs `analysis.m` from the directory you submit the job from:
 
 ```bash title="matlab-job.sh"
 #!/bin/bash
-#SBATCH --job-name=matlab-example    # (1)!
-#SBATCH --cpus-per-task=4            # (2)!
-#SBATCH --mem=16G                    # (3)!
-#SBATCH --time=02:00:00              # (4)!
+#SBATCH --job-name=matlab-example    # (1)
+#SBATCH --cpus-per-task=4            # (2)
+#SBATCH --mem=16G                    # (3)
+#SBATCH --time=02:00:00              # (4)
 
-module load matlab                   # (5)!
-matlab -batch "analysis"             # (6)!
+module load matlab                   # (5)
+matlab -batch "analysis"             # (6)
 ```
 
 1. A name for the job, shown in `squeue`.

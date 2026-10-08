@@ -33,7 +33,6 @@ theme:
   language: en
   features:
     - content.annotations
-    - content.code.annotate
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
@@ -107,7 +106,7 @@ markdown_extensions:
   - pymdownx.blocks.details
   - pymdownx.details
   - pymdownx.highlight:
-      anchor_linenums: true
+      anchor_linenums: false
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite

@@ -26,13 +26,13 @@ Save your code as a `.wls` script and run it with `wolframscript`:
 
 ```bash title="mathematica-job.sh"
 #!/bin/bash
-#SBATCH --job-name=mathematica    # (1)!
-#SBATCH --cpus-per-task=1         # (2)!
-#SBATCH --mem=8G                  # (3)!
-#SBATCH --time=02:00:00           # (4)!
+#SBATCH --job-name=mathematica    # (1)
+#SBATCH --cpus-per-task=1         # (2)
+#SBATCH --mem=8G                  # (3)
+#SBATCH --time=02:00:00           # (4)
 
-module load mathematica           # (5)!
-wolframscript -file analysis.wls  # (6)!
+module load mathematica           # (5)
+wolframscript -file analysis.wls  # (6)
 ```
 
 1. A name for the job, shown in `squeue`.

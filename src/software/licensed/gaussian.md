@@ -33,13 +33,13 @@ job.
 
 ```bash title="gaussian-job.sh"
 #!/bin/bash
-#SBATCH --job-name=gaussian    # (1)!
-#SBATCH --cpus-per-task=8      # (2)!
-#SBATCH --mem=16G              # (3)!
-#SBATCH --time=12:00:00        # (4)!
+#SBATCH --job-name=gaussian    # (1)
+#SBATCH --cpus-per-task=8      # (2)
+#SBATCH --mem=16G              # (3)
+#SBATCH --time=12:00:00        # (4)
 
-module load gaussian           # (5)!
-g16 molecule.gjf               # (6)!
+module load gaussian           # (5)
+g16 molecule.gjf               # (6)
 ```
 
 1. A name for the job, shown in `squeue`.

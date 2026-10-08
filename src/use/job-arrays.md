@@ -20,14 +20,14 @@ This script processes ten input files, named `input_1.txt` through
 ```bash title="array.sh"
 #!/bin/bash
 #SBATCH --job-name=array-example
-#SBATCH --array=1-10                 # (1)!
+#SBATCH --array=1-10                 # (1)
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
-#SBATCH --time=00:30:00              # (2)!
-#SBATCH --output=array-%A_%a.out     # (3)!
+#SBATCH --time=00:30:00              # (2)
+#SBATCH --output=array-%A_%a.out     # (3)
 
 module load python
-python3 process.py input_${SLURM_ARRAY_TASK_ID}.txt   # (4)!
+python3 process.py input_${SLURM_ARRAY_TASK_ID}.txt   # (4)
 ```
 
 1. Runs ten tasks, numbered 1 to 10. You can also give a list, such as
